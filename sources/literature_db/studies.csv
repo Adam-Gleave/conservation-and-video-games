@@ -1,0 +1,4 @@
+id,research_type,description,data_type,exposure_duration,comparator,control_group,pilot_study,sample_type,sample_size,age_range,power_analysis,pre_post_measures,follow_up,paper_id
+4,non_experimental,"Played/read transcripts for mainline games, referred to Bulbapedia database, compared observations of ecology and conservation-related terms within games and IPCC/UN documents",qualitative,,,f,f,Games (main series),26,"(,)",f,f,f,10
+5,non_experimental,Content analysis of online discourse (Facebook and YouTube),mixed,,,f,f,Online posts and comments,"~600 posts; ~50,000 comments","(,)",f,f,f,11
+6,non_experimental,Interviews (semi-structured),qualitative,,,f,f,Campaign organisers,4,"(,)",f,f,f,11
