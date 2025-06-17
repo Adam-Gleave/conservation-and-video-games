@@ -286,6 +286,39 @@ from ${data_types}
     }
 }/>
 
+```sql studies
+select * from literature_db.studies
+```
+
+```sql study_count_query
+select 
+    count(case when comparator is not null then 1 else null end) as comparator_count,
+    count(case when control_group = true then 1 else null end) as control_group_count,
+    count(case when pre_post_measures = true then 1 else null end) as pre_post_measures_count,
+    count(*) as all_count
+from literature_db.studies
+```
+
+```sql comparator_percent_query
+select 
+    (comparator_count / all_count) * 100 as percent
+from ${study_count_query}
+```
+
+```sql control_group_percent_query
+select
+    (control_group_count / all_count) * 100 as percent
+from ${study_count_query}
+```
+
+```sql pre_post_measures_percent_query
+select
+    (pre_post_measures_count / all_count) * 100 as percent
+from ${study_count_query}
+```
+
+__<Value data={comparator_percent_query} column=percent fmt=pct0 />__ of all studies use comparators. __<Value data={control_group_percent_query} column=percent fmt=pct0 />__ of all studies use control groups. __<Value data={pre_post_measures_percent_query} column=percent fmt=pct0 />__ of all studies use pre/post measures.
+
 <!-- <Dropdown
     data={genres_query}
     name=genre_dropdown
