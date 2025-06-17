@@ -199,3 +199,114 @@ order by game asc
     <Column id=game />
     <Column id=platforms />
 </DataTable>
+
+## Games by Genre
+
+All games included in the map, broken down by genre.
+
+```sql genres_query
+select
+    genres.name as genre, count(games_to_genres.genre_id) as genre_count
+from literature_db.games_to_genres
+join literature_db.genres
+on literature_db.games_to_genres.genre_id = literature_db.genres.id
+group by name 
+order by name asc
+```
+
+<BarChart
+    data={genres_query}
+    x=genre
+    y=genre_count
+    sort=false
+/>
+
+## Studies by Research Type
+
+```sql research_types
+select
+    studies.research_type as research_type, count(research_type) as research_type_count
+from literature_db.studies
+group by research_type
+order by research_type asc
+```
+
+```sql research_types_donut_query
+select
+    research_type as name,
+    research_type_count as value
+from ${research_types}
+```
+
+<ECharts config={
+    {
+        tooltip: {
+            formatter: '{b}: {c} ({d}%)'
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: ['40%', '70%'],
+                data: [...research_types_donut_query],
+            }
+        ]
+    }
+}/>
+
+## Studies by Data Type
+
+```sql data_types
+select
+    studies.data_type as data_type, count(data_type) as data_type_count
+from literature_db.studies
+group by data_type
+order by data_type asc
+```
+
+
+```sql data_types_donut_query
+select
+    data_type as name,
+    data_type_count as value
+from ${data_types}
+```
+
+<ECharts config={
+    {
+        tooltip: {
+            formatter: '{b}: {c} ({d}%)'
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: ['40%', '70%'],
+                data: [...data_types_donut_query],
+            }
+        ]
+    }
+}/>
+
+<!-- <Dropdown
+    data={genres_query}
+    name=genre_dropdown
+    value=genre
+    title="Genre"
+    order="genre asc"
+/>
+
+-- ```sql games_by_genre_query
+-- select games.name as game, array_agg(genres.name) as genres
+-- from literature_db.games
+-- join literature_db.games_to_genres
+-- on literature_db.games_to_genres.game_id = literature_db.games.id
+-- join literature_db.genres
+-- on literature_db.genres.id = literature_db.games_to_genres.genre_id
+-- group by games.name
+-- having contains(genres, '${inputs.genre_dropdown.value}')
+-- order by game asc
+-- ```
+
+<DataTable data={games_by_genre_query}>
+    <Column id=game />
+    <Column id=genres />
+</DataTable> -->
