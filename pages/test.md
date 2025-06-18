@@ -319,27 +319,49 @@ from ${study_count_query}
 
 __<Value data={comparator_percent_query} column=percent fmt=pct0 />__ of all studies use comparators. __<Value data={control_group_percent_query} column=percent fmt=pct0 />__ of all studies use control groups. __<Value data={pre_post_measures_percent_query} column=percent fmt=pct0 />__ of all studies use pre/post measures.
 
-<!-- <Dropdown
-    data={genres_query}
-    name=genre_dropdown
-    value=genre
-    title="Genre"
-    order="genre asc"
+<!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
+```sql papers_to_games
+select coalesce(p_id, s_id) as paper_id, papers.type as paper_type, array_distinct(array_concat(p_names, s_names)) as games from
+(
+    select papers.id as p_id, array_agg(distinct games.name) as p_names
+    from literature_db.papers
+    join literature_db.games_to_papers
+    on papers.id = games_to_papers.paper_key
+    join literature_db.games
+    on games.id = games_to_papers.game_id
+    where games.type = 'game'
+    group by papers.id
+)
+full join
+(
+    select studies.paper_id as s_id, array_agg(distinct games.name) as s_names
+    from literature_db.studies
+    join literature_db.games_to_studies
+    on studies.id = games_to_studies.study_id
+    join literature_db.games
+    on games.id = games_to_studies.game_id
+    where games.type = 'game'
+    group by studies.paper_id
+)
+on p_id = s_id
+join literature_db.papers
+on papers.id = coalesce(p_id, s_id)
+group by all
+```
+
+```sql game_counts
+select game['unnest'] as game_name, paper_type, count(game) as game_count
+from ${papers_to_games},
+unnest(games) as game
+group by all
+order by game_count desc
+```
+
+<BarChart
+    data={game_counts}
+    x=game_name
+    y=game_count
+    series=paper_type
+    xFmt=id
+    swapXY=true
 />
-
--- ```sql games_by_genre_query
--- select games.name as game, array_agg(genres.name) as genres
--- from literature_db.games
--- join literature_db.games_to_genres
--- on literature_db.games_to_genres.game_id = literature_db.games.id
--- join literature_db.genres
--- on literature_db.genres.id = literature_db.games_to_genres.genre_id
--- group by games.name
--- having contains(genres, '${inputs.genre_dropdown.value}')
--- order by game asc
--- ```
-
-<DataTable data={games_by_genre_query}>
-    <Column id=game />
-    <Column id=genres />
-</DataTable> -->
