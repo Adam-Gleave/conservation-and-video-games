@@ -100,7 +100,7 @@ group by all
 order by franchise asc
 ```
 
-<Tabs>
+<Tabs fullWidth=true>
     <Tab label="Games">
         <BarChart
             data={game_counts}
@@ -136,3 +136,107 @@ order by franchise asc
         </DataTable>
     </Tab>
 </Tabs>
+
+<p/>
+<br/>
+
+---
+
+<p/>
+<br/>
+
+## Games by Platform
+
+All games included in the map, broken down by platform.
+
+```sql platforms_query
+select
+    platform, count(platform) as platform_count
+from literature_db.game_platforms
+group by platform
+order by platform asc
+```
+
+<BarChart
+    data={platforms_query}
+    x=platform
+    y=platform_count
+    sort=false
+/>
+
+```sql games_by_platform_query
+select games.name as game, array_agg(platform) as platforms
+from literature_db.games
+join literature_db.game_platforms
+on games.id = game_platforms.game_id
+where type = 'game'
+group by games.name
+having contains(platforms, '${inputs.platform_dropdown.value}')
+order by game asc
+```
+
+## Games by Genre
+
+All games included in the map, broken down by genre.
+
+```sql genres_query
+select genres.name as genre, count(games_to_genres.genre_id) as genre_count
+from literature_db.games_to_genres
+join literature_db.genres
+on games_to_genres.genre_id = genres.id
+join literature_db.games
+on games.id = games_to_genres.game_id
+where games.type = 'game'
+group by genres.name 
+order by genres.name asc
+```
+
+```sql games_genre_platform_query
+select 
+    games.name as game, 
+    array_to_string(array_distinct(array_agg(platform)), ', ') as platforms, 
+    array_to_string(array_distinct(array_agg(genres.name)), ', ') as genre_list
+from literature_db.games
+join literature_db.game_platforms
+on games.id = game_platforms.game_id
+join literature_db.games_to_genres
+on games.id = games_to_genres.game_id
+join literature_db.genres
+on games_to_genres.genre_id = genres.id
+where type = 'game' and platform in ${inputs.platform_dropdown.value} and genres.name in ${inputs.genre_dropdown.value}
+group by all
+order by game asc
+```
+
+<BarChart
+    data={genres_query}
+    x=genre
+    y=genre_count
+    sort=false
+/>
+
+<Dropdown
+    data={platforms_query}
+    name=platform_dropdown
+    value=platform
+    title="Platform"
+    order="platform asc"
+    multiple=true
+    selectAllByDefault=true
+/>
+
+<Dropdown
+    data={genres_query}
+    name=genre_dropdown
+    value=genre
+    title="Genre"
+    order="genre asc"
+    multiple=true
+    selectAllByDefault=true
+/>
+
+<DataTable data={games_genre_platform_query} rows=25>
+    <Column id=game />
+    <Column id=platforms />
+    <Column id=genre_list title=Genres />
+</DataTable>
