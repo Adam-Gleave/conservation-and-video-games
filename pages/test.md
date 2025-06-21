@@ -321,7 +321,7 @@ __<Value data={comparator_percent_query} column=percent fmt=pct0 />__ of all stu
 
 <!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
 ```sql papers_to_games
-select coalesce(p_id, s_id) as paper_id, papers.type as paper_type, array_distinct(array_concat(p_names, s_names)) as games from
+select coalesce(p_id, s_id) as paper_id, papers.type as paper_type, papers.first_author as author, papers.publication_year as year, papers.title as title, array_distinct(array_concat(p_names, s_names)) as games from
 (
     select papers.id as p_id, array_agg(distinct games.name) as p_names
     from literature_db.papers
@@ -357,6 +357,14 @@ group by all
 order by game_count desc
 ```
 
+```sql game_paper_details
+select author, year, title, game['unnest'] as game_name
+from ${papers_to_games},
+unnest(games) as game
+group by all
+order by author asc
+```
+
 <BarChart
     data={game_counts}
     x=game_name
@@ -365,3 +373,10 @@ order by game_count desc
     xFmt=id
     swapXY=true
 />
+
+<DataTable data={game_paper_details} search=true rows=25>
+    <Column id=game_name />
+    <Column id=author />
+    <Column id=year />
+    <Column id=title />
+</DataTable>
