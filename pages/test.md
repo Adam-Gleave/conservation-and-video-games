@@ -380,3 +380,22 @@ order by author asc
     <Column id=year />
     <Column id=title />
 </DataTable>
+
+```sql study_types
+select study_outcomes.outcome as outcome, research_type, count(research_type) as count
+from
+literature_db.studies
+join
+literature_db.study_outcomes
+on studies.id = study_outcomes.study_id
+group by outcome, research_type
+```
+
+<BarChart
+    data={study_types}
+    x=outcome
+    y=count
+    series=research_type
+    xFmt=id
+    swapXY=true
+/>
