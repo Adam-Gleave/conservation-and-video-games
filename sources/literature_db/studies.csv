@@ -2,3 +2,142 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 4,non_experimental,"Played/read transcripts for mainline games, referred to Bulbapedia database, compared observations of ecology and conservation-related terms within games and IPCC/UN documents",qualitative,,,f,f,Games (main series),26,"(,)",f,f,f,10
 5,non_experimental,Content analysis of online discourse (Facebook and YouTube),mixed,,,f,f,Online posts and comments,"~600 posts; ~50,000 comments","(,)",f,f,f,11
 6,non_experimental,Interviews (semi-structured),qualitative,,,f,f,Campaign organisers,4,"(,)",f,f,f,11
+7,non_experimental,Content/sentiment analysis of online discourse (YouTube),mixed,,,f,f,Online comments,"3,787","(,)",f,f,f,264
+8,non_experimental,Interviews (semi-structured),qualitative,,,f,f,Campaign organisers,4,"(,)",f,f,f,264
+10,non_experimental,Content analysis of Green Game Jam winners 2023 to classify adaptations to existing games,qualitative,,,f,f,Game(s),10,"(,)",f,f,f,265
+11,non_experimental,Comparative critical play (played solo and cooperatively),qualitative,2 years (total),,f,f,Game(s),4,"(,)",f,f,f,266
+12,non_experimental,Content analysis of LBGs' features and mechanics based on authors' play,qualitative,>= 10 hours per game,,f,f,Game(s),8,"(,)",f,f,f,267
+13,non_experimental,Played game to record observations of environmental content,qualitative,>700 hours (total),,f,f,Game(s),2,"(,)",f,f,f,268
+14,non_experimental,"Multimodal framing analysis to study in-game ecological dead zone, players'' online responses to it, and how it is (re)framed via user-generated content",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,270
+15,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),[null],"(,)",f,f,f,272
+16,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,273
+17,non_experimental,"Content analysis of how game audio depicts ''green medievalist'' stereotypes of nature, ecology, and the past",qualitative,,,f,f,Game(s),45,"(,)",f,f,f,275
+18,non_experimental,Content analysis using (and refining) the assessment index system framework to assess how sustainability is presented in city-building games,qualitative,,,f,t,Game(s),7,"(,)",f,f,f,277
+19,non_experimental,"Played in-game environments and observed how they react to player''s presence, and what actions can be performed by players",qualitative,5 hours per game,,f,f,Game(s),2,"(,)",f,f,f,282
+20,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,283
+21,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,286
+22,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),2,"(,)",f,f,f,287
+23,non_experimental,"Played game and recorded observations (used journal entries, memos, screenshots), contextualized by separate paratexts/communication",qualitative,31-48 hours per game,,f,f,Game(s),2,"(,)",f,f,f,291
+24,non_experimental,"Immersive-participatory method - Collected data from own gameplay as well as digital archives of games dated between 2016-2022 (inc. game websites, game wikis, game forum, and game media)",qualitative,400 hours (total),,f,f,Game(s),2,"(,)",f,f,f,293
+25,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,294
+26,non_experimental,"Autoethnographic: Combining in-game wandering, slow play, and ludic bordeom to connect with in-game nature",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,297
+27,non_experimental,Content analysis of virtual landscapes which are compared to real-world ones; based on in-depth gameplay and evaluated by topic-relevant experts,mixed,,,f,f,Game(s),16,"(,)",f,f,f,298
+28,non_experimental,Content analysis of virtual landscapes which are compared to real-world ones; based on in-depth gameplay and evaluated by topic-relevant experts,mixed,,,f,f,Game(s),21,"(,)",f,f,f,299
+29,non_experimental,Played game and used sketching (annotating screenshots) to infer meaning,qualitative,2 days,,f,f,Game(s),1,"(,)",f,f,f,300
+30,non_experimental,"Autoethnographic analysis, based on thick description of gameplay fieldwork",qualitative,4 months,,f,f,Game(s),1,"(,)",f,f,f,301
+31,non_experimental,"Played game as part of a close reading, focusing on acoustic environment",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,302
+32,non_experimental,"Played game as part of a close reading, focusing on acoustic environment",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,303
+33,non_experimental,Autoethnographic gameplay analysis,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,304
+34,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,305
+35,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,306
+36,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,307
+37,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,308
+38,non_experimental,Played game whilst taking notes and screenshots; compared against a book,qualitative,17 hours,Book (Code Blue),f,f,Game(s),1,"(,)",f,f,f,311
+39,non_experimental,"Played game to conduct analysis, using videos, screenshots, and verbal notetaking",qualitative,>=27.5 hours,,f,f,Game(s),1,"(,)",f,f,f,317
+40,non_experimental,Played games and assessed based on selected frameworks,qualitative,,,f,f,Game(s),15,"(,)",f,f,f,319
+41,non_experimental,Data scrape of Google Play store using 96 nature-themed terms,quantitative,,,f,f,Game(s),"2,351","(,)",f,f,f,320
+42,non_experimental,"Observed consequences/feedback of sustainable city-building; Content analysis on all in-game sustainability-related features, measures, construction projects",qualitative,305 hours,,f,f,Game(s),1,"(,)",f,f,f,321
+43,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,322
+44,non_experimental,Played games to identify types of player agency based on notes and close reading,qualitative,35-40+ hours,,f,f,Game(s),2,"(,)",f,f,f,324
+45,non_experimental,"Social semiotic approach to identify how MGSV promotes ecological awareness, based on gameplay recordings",mixed,,,f,f,Game(s),1,"(,)",f,f,f,325
+46,non_experimental,"Diary entries to record personal experiences (varied in format between authors, e.g., photography, raw observations, structured summary)",qualitative,8 weeks,,f,f,Game(s),1,"(,)",f,f,f,327
+47,non_experimental,"Content analysis to record environmental themes present in the game based on author gameplay, plus its accessibility features",mixed,,,f,f,Game(s),1,"(,)",f,f,f,332
+48,non_experimental,"Ecolinguistic analysis on the ecological framings in FF7_RI, based on its script",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,333
+49,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,338
+50,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,341
+51,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,342
+52,non_experimental,"Value Sensitive Design to explore how game supports/limits sustainable thinking, based on observations of paratexts and games'' websites",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,344
+53,non_experimental,Content analysis of how the game elements engage players with environmental education,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,345
+54,non_experimental,"Critical analytical schema applied to game, based on author''s gameplay experience, game wikis, and reports from other players/researchers",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,347
+55,non_experimental,"Discourse analysis to assess the in-game relationship between humans and nature, using own gameplay recordings",qualitative,,,f,f,Game(s),2,"(,)",f,f,f,350
+56,non_experimental,Played games and analysed according to predetermined protocol,qualitative,4-9 hours per game,,f,f,Game(s),3,"(,)",f,f,f,351
+57,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,quantitative,,,f,f,Game(s),,"(,)",f,f,f,353
+58,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,355
+59,non_experimental,Played games to explore how they represent human-nature relationships,qualitative,,,f,f,Game(s),3,"(,)",f,f,f,358
+60,non_experimental,"Played game as part of a close reading, taking detailed notes throughout",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,359
+61,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,360
+62,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,363
+63,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,364
+64,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,365
+65,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),3,"(,)",f,f,f,366
+66,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,367
+67,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,368
+68,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),2,"(,)",f,f,f,369
+69,non_experimental,Semio-pragmatic analysis based on observations from own gameplay,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,370
+70,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,372
+71,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,374
+72,non_experimental,"Autoethnographic: Played games and used screenshots/diary entries to structure thoughts in a comparable way, captured before/during/after play",qualitative,3 months (total),,f,t,Game(s),8,"(,)",f,f,f,375
+73,non_experimental,"Played game and recorded/transcribed gameplay, using video and screenshots; reviewed YouTube videos and interviews with developer, plus forum discussions",qualitative,300+ hours,,f,f,Game(s),1,"(,)",f,f,f,376
+74,non_experimental,Semiotic square to map different approaches to engage with forests,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,380
+75,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),2,"(,)",f,f,f,381
+76,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,383
+77,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,384
+78,non_experimental,Ecolinguistic analysis based on author gameplay and the game's paratexts (official website and wiki fandom page),qualitative,,,f,f,Game(s),1,"(,)",f,f,f,390
+79,non_experimental,Autoethnographic gameplay analysis,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,391
+80,non_experimental,Autoethnographic (collaborative approach within family),qualitative,6 months,,f,f,Game(s),1,"(,)",f,f,f,392
+81,non_experimental,Content analysis of Green Game Creative Competition 2020-2022 entries to classify types of gamification communication modes,qualitative,,,f,f,Game(s),76,"(,)",f,f,f,393
+82,non_experimental,"Content analysis on 2,421 player comments published on forums and social media, of which 56 posts noted the game''s environmental message",qualitative,,,f,f,Online comments,56,"(,)",f,f,f,385
+83,non_experimental,Observed engagement with a social media post that uses Pokémon species,qualitative,,,f,f,Online comments,,"(,)",f,f,f,371
+84,non_experimental,Content analysis to assess paratexts for how players engage with ecological play,qualitative,,,f,f,Paratexts,,"(,)",f,f,f,339
+85,non_experimental,Content analysis of paratexts to identify ACNH's emergent ecological dimensions,qualitative,,,f,f,Paratexts,,"(,)",f,f,f,340
+86,non_experimental,Survey for species identification using series of flashcards,quantitative,,non-game species,t,f,Players,109,"[4,11)",f,f,f,269
+87,non_experimental,Focus group (mini: fewer participants),qualitative,,,f,f,Players,9,"[19,40)",f,f,f,271
+88,non_experimental,Survey for species identification,quantitative,,non-game species,t,f,Players,200,"[13,86)",t,f,f,276
+89,non_experimental,Interviews (semi-structured) as part of multi-stage interventional study,qualitative,35-40 minutes,,f,f,Players,34,"[18,43)",f,f,t,279
+90,quasi_experimental,Survey (including implicit attitude test) as part of multi-stage interventional study,quantitative,35-40 minutes,,f,f,Players,36,"[18,43)",f,t,t,280
+136,quasi_experimental,Survey delivered via 11 games,quantitative,,,f,f,Players,"389,594","(,)",f,t,f,343
+91,quasi_experimental,Survey (including implicit attitude test) as part of multi-stage interventional study,quantitative,35-40 minutes,Game (Plasticity),f,f,Players,36,"[18,43)",f,t,t,281
+92,non_experimental,Pedagogical experience to relate in-game species with real-world counterparts; Distributed questionnaires,qualitative,,,f,f,Players,28,"[15,17)",f,f,f,284
+93,non_experimental,Pedagogical experience using PG to learn biology; Recorded observations and conducted semi-structured interviews,qualitative,2 hours,,f,f,Players,4,"[14,15)",f,f,f,285
+94,non_experimental,"Questionnaire to assess motivations to play, and its effect on movement patterns",quantitative,,,f,f,Players,89,"[14,64)",f,f,f,290
+95,non_experimental,"Questionnaire to determine impact of PG on physical activity, social relations, spatial orientation, and places",quantitative,,,f,f,Players,714,"[11,56)",f,f,f,292
+96,non_experimental,Survey and focus groups to assess the value of a pedagogical experience,mixed,,,f,t,Players,174,"[4,17)",f,f,f,315
+97,non_experimental,Interviews (semi-structured) and closed card sorting task to identify/discuss main social issues in games,qualitative,15-200 hours per game,,f,t,Players/Journalists/Researchers,11,"[27,48)",f,f,f,318
+98,non_experimental,"Questionnaire for preferences and behaviours regarding PG features, based on content analysis used to identify presence of gamification features",quantitative,,,f,f,Players,311,"(,)",f,f,f,323
+100,non_experimental,"Survey for wildlife identification quiz, plus survey on learning and memorable in-game experiences",mixed,<5-100+ hours,,t,t,Players,545,"[18,)",f,f,f,278
+101,non_experimental,Survey of players sourced from social media and online blog,mixed,<50-500+ hours,,t,t,Players,"1,898","[18,)",f,f,f,274
+102,experimental,Randomised-control trial using questionnaires,quantitative,>=3 hours,Documentary,t,f,Players,182,"[18,55)",t,t,f,288
+103,quasi_experimental,Implicit association test to detect changes in implicit attitudes towards animal protagonists,quantitative,~24 minutes,,f,f,Players,78,"[18,49)",f,t,f,289
+104,non_experimental,Interview with game's Creative Director,qualitative,,,f,f,Game Creative Director,1,"(,)",f,f,f,310
+105,non_experimental,Questionnaire delivered online,quantitative,,,f,t,Players,640,"[11,55)",t,f,f,312
+106,non_experimental,Questionnaire delivered online,quantitative,,,f,t,Players,640,"[11,55)",t,f,f,313
+107,non_experimental,Questionnaire delivered online,quantitative,,,f,t,Players,640,"[11,55)",t,f,f,388
+108,non_experimental,Questionnaire delivered online,quantitative,,,f,f,Players,584,"(,)",t,f,f,389
+109,non_experimental,Questionnaire delivered online (using Vuong et al.'s open dataset),quantitative,,,f,t,Players,640,"[11,55)",f,f,f,382
+110,non_experimental,"Questionnaire distributed online, and discuss findings also in context of textual analysis of game to score vegetation index nature-friendliness of potential races/classes",quantitative,,,f,f,Players,"1,173","[18,)",f,f,f,386
+111,non_experimental,Survey to determine whether games help students' understanding of SDGs,quantitative,,,f,f,Players,69,"(,)",f,f,f,379
+112,quasi_experimental,Diaries (written and photographic) followed by interviews (semi-structured),qualitative,>=8 hours per game,,f,f,Players,6,"[18,)",f,t,f,377
+113,quasi_experimental,Diaries (written and photographic) followed by interviews (semi-structured),qualitative,10+ hours,,f,f,Players,6,"[18,30)",f,t,f,378
+114,non_experimental,"Content analysis to assess initial version of the structure/design of NMS then later modifications, based on gaming community articles and promotional materials/developer interviews; Played game for 30 hours in first phase, then 20 hours for second phase",qualitative,50 hours,,f,f,Game(s),1,"(,)",f,f,f,378
+115,non_experimental,Diary study (using daily self-evaluation reports) followed by focus group,qualitative,>=2.5 hours (total),,f,f,Players,2,"(,)",f,f,f,361
+116,non_experimental,Diary study (using daily self-evaluation reports) followed by focus group,qualitative,>=2.5 hours (total),,f,f,Players,5,"[18,23)",f,f,f,362
+117,quasi_experimental,Questionnaire before and after pedagogical experience,quantitative,,,f,f,Players,223,"[7,15)",t,t,f,314
+118,quasi_experimental,"Questionnaire and observations to assess knowledge before pedgagogical experience, then discussion and another questionnaire afterward",mixed,,,f,f,Players,68,"[9,10)",f,t,f,316
+120,non_experimental,Interviews (semi-structured) to gauge how games help players visualise potential futures,qualitative,,,f,f,Players,16,"[14,39)",f,f,f,326
+121,non_experimental,"Focus group (workshop) to discuss the design of LBGs to benenfit forest-goers, landowners, and forest industry",qualitative,,,f,f,Stakeholders,16,"(,)",f,f,f,328
+122,non_experimental,Interviews (semi-structured) grounded in Gioia method,qualitative,1-5.5 years,,f,f,Players,21,"(,)",f,f,f,329
+123,non_experimental,Interviews (semi-structured),qualitative,1-5.5 years,,f,f,Players,21,"[21,60)",f,f,f,330
+124,non_experimental,"Observed player engagement with author-made in-game ''Routes'' over 8 time points (spanning 154 days), followed by survey to assess ''Route'' habits/preferences",mixed,,,f,f,Players,67,"[18,)",f,f,f,331
+125,non_experimental,"Survey asking players'' favourite Pokemon species, and compared this to societal preferences of species",quantitative,,,f,f,Players,,"(,)",f,f,f,334
+126,non_experimental,Green space capability analysis using PG data to assess types of green space and generate a heat map of POIs for cultural and biodiversity hotspots,quantitative,,,f,f,University campus,1,"(,)",f,f,f,335
+127,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Players,"1,094","(,)",f,f,f,336
+128,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Players,"1,356","(,)",f,f,f,337
+129,non_experimental,Questionnaire and observations of player and gameplay to gauge player profiles and responses to a prototype pedagogical experience,mixed,,,f,f,Players,80,"[15,25)",f,f,f,373
+130,non_experimental,"Observed how children''s engagement with outdoor spaces was informed by experiences with online content (e.g., Minecraft, social media)",qualitative,,,f,f,Players,50,"[12,17)",f,f,f,357
+131,non_experimental,Questionnaire based on pedagogical experience about ecological interactions between real or virtual species; information sourced from content analysis by ecologists,quantitative,,non-game species,f,f,Players,67,"[18,)",f,f,f,356
+132,non_experimental,Focus groups (semi-structured),qualitative,>1-2 years,,f,f,Players,8,"(,)",f,f,f,354
+133,non_experimental,"Survey posted on game''s Discord servers, followed by interviews with subsample of survey respondents",mixed,,,f,f,Players,79,"(,)",f,f,f,352
+134,non_experimental,Survey delivered online,quantitative,0.2-600 hours,,f,f,Players,465,"[18,73)",f,f,f,348
+135,non_experimental,Interview with game consultant,qualitative,,,f,f,Consultant for the game,1,"(,)",f,f,f,349
+137,non_experimental,Interviews with players,qualitative,,,f,f,Players,6,"[16,48)",f,f,f,387
+138,non_experimental,Content analysis (using Social Impact in Social Media Methodology) to analyse comments about ACNH on Twitter,mixed,,,f,f,Online comments,"1,000","(,)",f,f,f,387
+140,non_experimental,Survey on video game engagement and spatial perceptions,mixed,,,f,f,Players,721,"[8,18)",f,f,f,346
+141,non_experimental,Surveys to gauge potential use of games in classrooms over 30 months,mixed,,,f,f,Teachers,411,"[26,65)",f,f,f,346
+142,non_experimental,Observed players' nature/transformative experiences based on semi-structured diaries and interviews (semi-structured),qualitative,30 days,,f,f,Players,4,"[22,37)",f,f,f,309
+143,non_experimental,Survey of players (separate players from ethnographic section),qualitative,"14-4,400 hours",,f,f,Players,30,"[16,38)",f,f,f,309
+144,non_experimental,"Interview (expert, systematized) with community manager of the game",qualitative,,,f,f,Game community manager,1,"(,)",f,f,f,309
+145,non_experimental,Content analysis of online discourse (Twitch),qualitative,,,f,f,Livestreams,2,"(,)",f,f,f,295
+146,non_experimental,Interviews (semi-structured) to review current state of teaching and researching environmental sustainability of digital media/games,qualitative,,,f,f,Academics who teach green gaming topics,10,"(,)",f,f,f,296
+147,non_experimental,Interviews (semi-structured) to identify overlap between game development and environmental issues,qualitative,,,f,f,Game developers,11,"(,)",f,f,f,296
+148,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,qualitative,,,f,f,Game studios (members of Czech Game Developers Association),33,"(,)",f,f,f,296
+149,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,qualitative,,,f,f,Game companies (members of Playing for the Planet Alliance),56,"(,)",f,f,f,296

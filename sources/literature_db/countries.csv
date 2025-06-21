@@ -1,8 +1,64 @@
 id,name,continent
-3,United States,North America
 4,Australia,Oceania
-5,United Kingdom,Europe
 6,Italy,Europe
 7,Belgium,Europe
 8,Canada,North America
 9,Vietnam,Asia
+10,South Africa,Africa
+11,Seychelles,Africa
+12,Morocco,Africa
+13,Egypt,Africa
+14,Nigeria,Africa
+15,United Arab Emirates,Asia
+17,Pakistan,Asia
+18,India,Asia
+19,Taiwan,Asia
+20,Japan,Asia
+21,Hong Kong,Asia
+22,Indonesia,Asia
+23,China,Asia
+24,Oman,Asia
+25,Israel,Asia
+26,Lebanon,Asia
+27,Iran,Asia
+28,Iraq,Asia
+29,Nepal,Asia
+30,Saudi Arabia,Asia
+31,Azerbaijan,Asia
+32,Austria,Europe
+33,Greece,Europe
+34,Iceland,Europe
+35,Switzerland,Europe
+36,Turkey,Europe
+37,Czech Republic,Europe
+38,Romania,Europe
+39,Denmark,Europe
+40,France,Europe
+41,Poland,Europe
+42,Sweden,Europe
+43,Norway,Europe
+44,Netherlands,Europe
+45,Spain,Europe
+46,Finland,Europe
+47,Germany,Europe
+48,Ireland,Europe
+49,Estonia,Europe
+50,Cyprus,Europe
+51,Portugal,Europe
+52,Ukraine,Europe
+53,Lithuania,Europe
+54,Slovakia,Europe
+55,Russia,Europe
+56,Georgia,Europe
+57,Mexico,North America
+58,Costa Rica,North America
+59,New Zealand,Oceania
+60,Brazil,South America
+61,Argentina,South America
+62,Chile,South America
+63,Ecuador,South America
+64,Venezuela,South America
+16,Philippines,Asia
+65,Hungary,Europe
+3,United States,North America
+5,United Kingdom,Europe

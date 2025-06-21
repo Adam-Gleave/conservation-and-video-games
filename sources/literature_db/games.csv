@@ -33,7 +33,570 @@ id,name,release_year,type
 58,Monster Hunter (F),,franchise
 59,Monster Hunter: Rise,2021,game
 60,New Pokémon Snap,2021,game
-61,Dredge,2023,game
 62,Red Dead Redemption 2,2018,game
 63,Ridiculous Fishing,2013,game
 64,Red Dead (F),,franchise
+61,Dredge,2023,game
+66,(Lil) Green Patch,2010,game
+67,A Bug's Life,1998,game
+68,A New Beginning (Final Cut),2012,game
+69,A Plague Tale: Innocence,2019,game
+70,A Short Hike,2019,game
+71,Abzû,2016,game
+72,AdventureQuest,2002,game
+73,Age of Conan: Hyborian Adventures,2008,game
+74,Age of Empires 2,1999,game
+75,Age of Empires 4,2021,game
+76,Alba: A Wildlife Adventure,2020,game
+77,Along Came a Spider,2009,game
+78,Ancestors Legacy,2018,game
+79,Angry Video Game Nerd Adventures,2013,game
+80,Animal Crossing: New Horizons,2020,game
+81,Animal Crossing: New Leaf,2012,game
+82,Anno 1404,2009,game
+83,Anno 1800,2019,game
+84,Ant General,2012,game
+85,Ant Hill,1991,game
+86,Ant Nation,2009,game
+87,Ant Queen,2016,game
+88,Ant Raid,2011,game
+89,Ant War: Domination,2003,game
+90,Apocalipsis: Harry at the End of the World,2018,game
+91,Arachnophobia,1991,game
+92,ArcaniA Gothic 4,2010,game
+93,ARK: Survival Evolved,2015,game
+94,Arrival: Village Kasike,2012,game
+95,Assassin's Creed,2007,game
+96,Assassin's Creed IV: Black Flag,2013,game
+97,Assassin's Creed: Odyssey,2018,game
+98,Assassin's Creed: Origins,2017,game
+99,Assassin's Creed: Valhalla,2020,game
+100,Awesome Possum... Kicks Dr. Machino's Butt,1993,game
+101,Bad Mojo,1996,game
+102,Bad North,2018,game
+103,Baldur's Gate 3,2020,game
+104,Banished,2014,game
+105,Banzai Bug,1996,game
+106,Battle Chef Brigade,2017,game
+107,Battlefield 2042,2021,game
+108,Bear Simulator,2016,game
+109,Beatstar,2020,game
+110,Bee & Flower,1983,game
+111,Bee Movie,2007,game
+112,Bee Simulator,2019,game
+113,Before We Leave,2020,game
+114,Besiege,2015,game
+115,Assassin's Creed III,2012,game
+116,Beyond Blue,2020,game
+117,Big Buck Hunter Pro,2006,game
+118,Biomutant,2021,game
+119,Bizy BeeZZzz,1984,game
+120,Blacktail,2022,game
+121,Blair Witch,2019,game
+122,BloodRayne,2002,game
+123,Boom Beach,2013,game
+124,Botanicula,2012,game
+125,Broken Sword: The Shadow of the Templars,1996,game
+126,Bug Attack,1981,game
+127,Bug Bash,1990,game
+128,Bug Blaster,1983,game
+129,Bug Blasters: the Exterminators,1995,game
+130,Bug Bomb,1983,game
+131,Bug Busters,2001,game
+132,Bug Hunt,1987,game
+133,Bug Hunter,1990,game
+134,Bug Hunter in Space,1990,game
+135,Bug Spray,1991,game
+136,Bug-N-Out,2016,game
+137,Bug!,1995,game
+138,Bugaboo (The Flea),1983,game
+139,Bugdom,1999,game
+140,Bugriders: The Race of Kings,1997,game
+141,BUGS,1982,game
+142,Butterfly,1985,game
+143,Cabela's Big Game Hunter: Pro Hunts,2014,game
+144,Castle Flipper,2021,game
+145,Centipede,1981,game
+146,Chasing Dead,2016,game
+147,Chernobylite,2019,game
+148,Chivalry: Medieval Warfare,2012,game
+149,Chrono Cross,1999,game
+150,Chrono Trigger,1995,game
+151,Cities: Skylines,2015,game
+152,City of Heroes,2004,game
+153,Cloud Gardens,2020,game
+154,Colossal Cave Adventure,1985,game
+155,Combat of Giants: Mutant Insects,2010,game
+156,Conker's Bad Fur Day,2001,game
+157,Conqueror A.D. 1086,1995,game
+158,Conquests of Camelot: The Search for the Grail,1990,game
+159,Conquests of the Longbow: The Legends of Robin Hood,1991,game
+160,Constructor,1997,game
+161,Coral Island,2022,game
+162,Counterstrike: Global Offensive,2012,game
+163,Crashlands,2016,game
+164,Crusader Kings III,2020,game
+165,Crysis Remastered,2020,game
+166,Cyberpunk 2077,2020,game
+167,Dark Fall: Lost Souls,2009,game
+168,Darkwood,2014,game
+169,Dawn of Man,2019,game
+170,Dead Island 2,2023,game
+171,Dear Esther,2012,game
+172,Death Stranding,2019,game
+173,Deer Hunter II: The Hunt Continues,1998,game
+174,Demon's Crest,1994,game
+175,Destiny 2,2017,game
+176,Diablo III,2012,game
+177,Diggy Adventure,2012,game
+178,Dishonored,2012,game
+179,Dishonored 2,2016,game
+180,Dishonored: The Death of the Outsider,2017,game
+181,Don't Starve,2013,game
+182,Donkey Kong 3,1983,game
+183,Draconius GO,2017,game
+184,Dragon Age: Inquisition,2014,game
+185,Dragon Quest Builders 2,2018,game
+186,Dragon's Dogma,2012,game
+187,Duck Hunt,1984,game
+188,Dukedom,1976,game
+189,E.V.O.: Search for Eden,1992,game
+190,Earthbound,1994,game
+191,Earthworm Jim,1994,game
+192,Earthworm Jim 2,1995,game
+193,Ecco the Dolphin,1992,game
+194,Eco,2018,game
+195,Elden Ring,2022,game
+196,Empire of the Ants,2000,game
+197,Endless Ocean: Luminous,2024,game
+198,Endling: Extinction is Forever,2022,game
+199,Entomorph: Plague of the Darkfall,1995,game
+200,Equilinox,2018,game
+201,EverQuest,1999,game
+202,Everybody's Gone to the Rapture,2015,game
+203,Everything,2017,game
+204,Evolve,2015,game
+205,Exterminator,1989,game
+206,Extreme Hunting 2,2006,game
+207,Factorio,2016,game
+208,Fallout,1997,game
+209,Far Cry 3,2012,game
+210,Far Cry 5,2018,game
+211,Far Cry 6,2021,game
+212,Far Cry: Primal,2016,game
+213,FarmVille,2009,game
+214,Fatal Frame II: Crimson Butterfly,2003,game
+215,Fatal Frame V: Maiden of Black Water,2014,game
+216,Fate/Grand Order,2015,game
+217,Final Fantasy,1987,game
+218,Final Fantasy VI,1994,game
+219,Final Fantasy VII,1997,game
+220,Final Fantasy VII Remake,2020,game
+221,Final Fantasy X,2001,game
+222,Final Fantasy XIII,2009,game
+223,Firewatch,2016,game
+224,Fist Puncher,2013,game
+225,Flower,2009,game
+226,Fly in the House,2015,game
+227,Foundation,2019,game
+228,FRAG Pro Shooter,2019,game
+229,FreeCiv,1996,game
+230,Frogger,1981,game
+231,Frogs,1978,game
+232,Frostpunk,2018,game
+233,Funky Bee,1982,game
+234,Garden Defense,2007,game
+235,Gee Bee,1978,game
+236,Ghost of Tsushima,2020,game
+237,Gloria Victis,2016,game
+238,Goat Simulator,2014,game
+239,God of War: Ascension,2013,game
+240,Going Medieval,2021,game
+241,Grand Ages: Medieval,2015,game
+242,Grand Theft Auto V,2013,game
+243,Graveyard Keeper,2018,game
+244,Grow Home,2015,game
+245,Growl,1991,game
+246,Guacamelee!,2013,game
+247,Guild Wars 2,2012,game
+248,Half-Life 2,2004,game
+249,Harry Potter: Wizards Unite,2019,game
+250,Harvest Moon,1996,game
+251,Harvestella,2022,game
+252,Hero of the Kingdom,2012,game
+253,Hitman: Blood Money,2006,game
+254,Hive Sweeper,2010,game
+255,Honkai: Star Rail,2023,game
+256,Honour Water,2016,game
+257,Hood: Outlaws & Legends,2021,game
+258,Horizon: Forbidden West,2022,game
+259,Horizon: Zero Dawn,2017,game
+260,Humankind,2021,game
+261,Hungry Shark: Evolution,2012,game
+262,Hungry Shark: World,2016,game
+263,I Was A Teenage Exocolonist,2022,game
+264,Imagine Earth,2014,game
+265,Ingress,2012,game
+266,Inscryption,2021,game
+267,Insurmountable,2021,game
+268,Iron Lord,1989,game
+269,Islands: Non-Places,2016,game
+270,Jack Lumber,2012,game
+272,Joe & Mac 2: Lost in the Tropics,1994,game
+273,Journey,2012,game
+274,June's Journey: Hidden Objects,2017,game
+275,Jurassic World: Alive,2018,game
+276,Jurassic World: Evolution,2018,game
+277,Ken Follett's The Pillars of the Earth,2017,game
+278,Kentucky Route Zero,2013,game
+279,Kinectimals,2010,game
+280,Kingdom Come: Deliverance,2018,game
+281,Kirby Super Star,1996,game
+282,Kisima Ingitchuna (Never Alone),2014,game
+283,Koala Lampur: Journey to the Edge,1997,game
+284,Konchuu Monster - Battle Master,2005,game
+285,Kontyu Hakase,1998,game
+286,Kontyu Monster - Battle Stadium,2005,game
+287,Kontyu Ouja Mushi Kingu,2007,game
+288,KWAAN,2015,game
+289,Life is Feudal: Your Own,2015,game
+290,Lord of the Rings Online,2007,game
+291,Love & Pies,2021,game
+292,Lufia II: Rise of the Sinistrals,1995,game
+293,Maneater,2020,game
+294,Marvel's Spider-Man,2018,game
+295,Maya the Bee & Her Friends,1999,game
+296,Medieval Dynasty,2020,game
+297,Medieval Games,2009,game
+298,Mega-Bug,1982,game
+299,Metal Gear Solid,1998,game
+300,Metal Gear Solid 2: Sons of Liberty,2001,game
+301,Metal Gear Solid 3: Snake Eater,2004,game
+302,Metal Gear Solid 4: Guns of the Patriots,2008,game
+303,Metal Gear Solid V: The Phantom Pain,2015,game
+304,Metro: Last Light,2013,game
+305,Metroid,1986,game
+306,Microsoft Ants,2006,game
+307,Mictlan,2012,game
+308,Mister Mosquito,2001,game
+309,Monster Hunter Stories 2: Wings of Ruin,2021,game
+310,Monument Valley II,2017,game
+311,Moomin Move,2023,game
+312,Mordheim: City of the Damned,2015,game
+313,Mortal Kombat X,2015,game
+314,Mount & Blade,2008,game
+315,Mountain,2014,game
+316,Mr. Butterfly,1983,game
+317,Mushihimesama,2004,game
+318,Mushiking: The King of Beetles,2003,game
+319,Mutazione,2019,game
+320,My Friend is A Raven,2020,game
+321,My Talking Angela 2,2021,game
+322,My Time at Portia,2018,game
+323,MySims: Agents,2009,game
+324,Night in the Woods,2017,game
+325,No Man's Sky,2016,game
+326,Northgard,2018,game
+327,Octodad: Dadliest Catch,2014,game
+328,Ōkami,2006,game
+329,Orna,2018,game
+330,Outer Wilds,2019,game
+331,Overwatch,2016,game
+332,Pac-Man,2013,game
+333,Papo & Yo,2012,game
+334,Pesterminator: The Western Exterminator,1990,game
+335,Pikmin,2001,game
+336,Pikmin Bloom,2021,game
+337,Pixie Hollow,2008,game
+338,Plague Inc.: Evolved,2014,game
+339,Plants vs. Zombies,2009,game
+340,Pocket City,2018,game
+341,Pokémon GO,2016,game
+342,Pokémon HeartGold,2009,game
+343,Pokémon SoulSilver,2009,game
+344,Port City,2021,game
+345,Proteus,2013,game
+346,QuizDuel,2012,game
+347,Rain World,2017,game
+348,Rayman Legends,2013,game
+349,Rayman Origins,2011,game
+350,Red Dead Redemption,2010,game
+351,Redfall,2023,game
+352,Resident Evil VII: Biohazard,2017,game
+353,Resident Evil: Village,2021,game
+354,Return of the Obra Dinn,2018,game
+355,Reus,2013,game
+356,Riders Republic,2021,game
+357,Robin Hood: Sherwood Builders,2024,game
+358,ROOT - A Game of Woodland Might and Right,2020,game
+359,Ruzzle,2012,game
+360,Safari Central,2020,game
+361,Sekiro: Shadows Die Twice,2019,game
+362,Sengoku Basara,2005,game
+363,Shadow of the Colossus,2005,game
+364,Shelter,2013,game
+365,Shelter 2,2015,game
+366,Sid Meier's Alpha Centauri,1999,game
+367,Sid Meier's Civilization Beyond Earth,2014,game
+368,Sid Meier's Civilization IV,2005,game
+369,Sid Meier's Civilization V,2010,game
+370,Sid Meier's Civilization VI,2016,game
+371,SimAnt,1991,game
+372,SimCity,1989,game
+373,SimCity: BuildIt,2014,game
+374,SimEarth: The Living Planet,1990,game
+375,SimFarm,1993,game
+376,Sleeping Dogs,2012,game
+377,Sonic the Hedgehog,1991,game
+378,Sonic the Hedgehog 2,1992,game
+379,Space Moth DX,2016,game
+380,Spider: Rite of the Shrouded Moon,2015,game
+381,Spider: The Video Game,1996,game
+382,Spirits of Spring,2014,game
+383,Splat!,1983,game
+384,Splatoon,2015,game
+385,Splatoon 2,2017,game
+386,Spore,2008,game
+387,Squash!,1993,game
+388,StarCraft,1998,game
+389,Stardew Valley,2016,game
+390,Story of Seasons,2015,game
+391,Story of Seasons: Pioneers of Olive Town,2021,game
+392,Stranded Deep,2015,game
+393,Strange Horticulture,2022,game
+394,Stranger of Paradise,2022,game
+395,Stray,2022,game
+396,Stronghold Crusader,2001,game
+397,Subnautica,2014,game
+398,Super Ghouls n' Ghosts,1991,game
+399,Super Mario Bros. Wonder,2023,game
+400,Super Mario Galaxy,2007,game
+401,Swat!,1995,game
+402,Sword of the Stars,2006,game
+403,System Shock 2,1999,game
+404,Terra Nil,2023,game
+405,TerraGenesis,2016,game
+406,The Battle for Wesnoth,2005,game
+407,The Bug Butcher,2016,game
+408,The Crew,2014,game
+409,The Crew 2,2018,game
+410,The Dark Pictures Anthology: House of Ashes,2021,game
+411,The Elder Scrolls III: Morrowind,2002,game
+412,The Elder Scrolls Online,2014,game
+413,The Elder Scrolls V: Skyrim,2011,game
+414,The First Templar,2011,game
+415,The Guild 3,2017,game
+416,The Last Guardian,2016,game
+417,The Last of Us,2013,game
+418,The Last of Us Part II,2020,game
+419,The Legend of Zelda: A Link to the Past,1991,game
+420,The Legend of Zelda: Breath of the Wild,2017,game
+421,The Legend of Zelda: Tears of the Kingdom,2023,game
+422,The Legend of Zelda: Twilight Princess,2006,game
+423,The Long Dark,2014,game
+424,The Mushitori Oukoku,2005,game
+425,The Outer Worlds,2019,game
+426,The Plan,2013,game
+427,The Quarry,2022,game
+428,The Sims 2,2004,game
+429,The Sims 3,2009,game
+430,The Sims 4,2014,game
+431,The Sims Freeplay,2011,game
+432,The Sims: Medieval,2011,game
+433,The Stillness of the Wind,2019,game
+434,The Universim,2018,game
+435,The Vanishing of Ethan Carter,2014,game
+436,The Walking Dead: Our World,2018,game
+437,The Witcher 3: Wild Hunt,2015,game
+438,The Witcher: Monster Slayer,2021,game
+439,theHunter Classic,2014,game
+440,theHunter: Call of the Wild,2017,game
+441,Thunderbird Strike,2017,game
+442,Timberborn,2021,game
+443,Tiny Worlds: Dragon Idle games,2021,game
+444,Tokyo Jungle,2012,game
+445,Total War Saga: Thrones of Britannia,2018,game
+446,Trainstation 2,2019,game
+447,Trauma Team,2010,game
+448,Tray Racers!,2023,game
+449,Turok 2: Seeds of Evil,1998,game
+450,Ty the Tasmanian Tiger,2016,game
+451,Undertale,2015,game
+452,Unravel,2016,game
+453,Until Dawn,2015,game
+454,Untitled Goose Game,2019,game
+455,Uru: Ages Beyond Myst,2003,game
+456,Valheim,2021,game
+457,Vampyr,2018,game
+458,Vigilante 8,1998,game
+459,Viva Piñata,2006,game
+460,Viva Piñata: Trouble in Paradise,2008,game
+461,Waking Mars,2012,game
+462,Walkr,2016,game
+463,War of the Roses,2012,game
+464,Wasteland 2,2014,game
+465,Watch Dogs 2,2016,game
+466,Werewolf: The Apocalypse - Heart of the Forest,2020,game
+467,Wii Fit Plus,2009,game
+468,Wii Sports Resort,2009,game
+469,Wild,,game
+470,Wildeverse,2019,game
+471,Word Domination,2018,game
+472,Wordbrain,2015,game
+473,World of Warcraft,2004,game
+474,World of Zoo,2009,game
+475,Worms: Armageddon,1999,game
+476,Yakuza 6,2016,game
+477,Za Kontyu Saishu,2005,game
+478,Zapper,2002,game
+479,"Zombies, Run!",2012,game
+480,Zoo Rampage,2014,game
+481,Zoo Tycoon,2001,game
+482,Zoo Tycoon (remake),2013,game
+483,A Plague Tale (F),,franchise
+484,Age of Empires (F),,franchise
+485,Angry Birds (F),,franchise
+486,Angry Video Game Nerd (F),,franchise
+487,Animal Crossing (F),,franchise
+488,Anno (F),,franchise
+489,Ant Hill (F),,franchise
+490,ARK (F),,franchise
+491,Assassin's Creed (F),,franchise
+492,Baldur's Gate (F),,franchise
+493,Battlefield (F),,franchise
+494,Bayonetta (F),,franchise
+495,Big Buck Hunter (F),,franchise
+496,Bioshock (F),,franchise
+497,BloodRayne (F),,franchise
+498,Breath of Fire (F),,franchise
+499,Broken Sword (F),,franchise
+500,Bug Hunter (F),,franchise
+501,Bug! (F),,franchise
+502,Bugdom (F),,franchise
+503,Cabela's Big Game Hunter (F),,franchise
+504,Centipede (F),,franchise
+505,Chrono (F),,franchise
+506,Cities: Skylines (F),,franchise
+507,City of Heroes/Villains (F),,franchise
+508,Combat of Giants (F),,franchise
+509,Conker (F),,franchise
+510,Counter-Strike (F),,franchise
+511,Crusader Kings (F),,franchise
+512,Crysis (F),,franchise
+513,Dark Fall (F),,franchise
+514,Dead Island (F),,franchise
+515,Deer Hunter (F),,franchise
+516,Destiny (F),,franchise
+517,Diablo (F),,franchise
+518,Dishonored (F),,franchise
+519,Donkey Kong (F),,franchise
+520,DonPachi (F),,franchise
+521,Dragon Age (F),,franchise
+522,Dragon Quest (F),,franchise
+523,Dragon's Dogma (F),,franchise
+524,Earthbound (F),,franchise
+525,Earthworm Jim (F),,franchise
+526,Ecco the Dolphin (F),,franchise
+527,Endless Ocean (F),,franchise
+528,Fable (F),,franchise
+529,Far Cry (F),,franchise
+530,FarmVille (F),,franchise
+531,Fatal Frame (F),,franchise
+532,Final Fantasy (F),,franchise
+533,Frogger (F),,franchise
+534,Frostpunk (F),,franchise
+535,Galaxian (F),,franchise
+536,Gears of War (F),,franchise
+537,Ghosts 'n Goblins (F),,franchise
+538,Goat Simulator (F),,franchise
+539,God of War (F),,franchise
+540,Gothic (F),,franchise
+541,Grand Ages (F),,franchise
+542,Grand Theft Auto (F),,franchise
+543,Grow (F),,franchise
+544,Guacamelee! (F),,franchise
+545,Guild Wars (F),,franchise
+546,Half-Life (F),,franchise
+547,Hero of the Kingdom (F),,franchise
+548,Hitman (F),,franchise
+549,Horizon (F),,franchise
+550,Hungry Shark (F),,franchise
+551,Jak and Daxter (F),,franchise
+552,Joe & Mac (F),,franchise
+553,Jurassic World: Evolution (F),,franchise
+554,Kingdom Come: Deliverance (F),,franchise
+555,Kirby (F),,franchise
+556,Konchuu Monster (F),,franchise
+557,Kontyu Hakase (F),,franchise
+558,Life is Feudal (F),,franchise
+559,Lufia (F),,franchise
+560,Marvel's Spider-Man (F),,franchise
+561,Maya the Bee (F),,franchise
+562,Mega Man (F),,franchise
+563,Metal Gear (F),,franchise
+564,Metro (F),,franchise
+565,Metroid (F),,franchise
+566,Monument Valley (F),,franchise
+567,Moomin (F),,franchise
+568,Mortal Kombat (F),,franchise
+569,Mount & Blade (F),,franchise
+570,Mushi King (F),,franchise
+571,MySims (F),,franchise
+572,Myst (F),,franchise
+573,Octodad (F),,franchise
+574,Overwatch (F),,franchise
+575,Pac-Man (F),,franchise
+576,Persona (F),,franchise
+577,Pikmin (F),,franchise
+578,Plants vs. Zombies (F),,franchise
+579,Ratchet & Clank (F),,franchise
+580,Rayman (F),,franchise
+581,Resident Evil (F),,franchise
+582,Reus (F),,franchise
+583,Roland (F),,franchise
+584,Sam & Max (F),,franchise
+585,Sengoku Basara (F),,franchise
+586,Shelter (F),,franchise
+587,Sid Meier's Civilization (F),,franchise
+588,Sim (F),,franchise
+589,SimCity (F),,franchise
+590,Sonic the Hedgehog (F),,franchise
+591,Spider (F),,franchise
+592,Splatoon (F),,franchise
+593,Spore (F),,franchise
+594,Spyro (F),,franchise
+595,StarCraft (F),,franchise
+596,Story of Seasons (F),,franchise
+597,Stronghold (F),,franchise
+598,Subnautica (F),,franchise
+599,Super Mario (F),,franchise
+600,Sword of the Stars (F),,franchise
+601,System Shock (F),,franchise
+602,Talking Tom and Friends (F),,franchise
+603,The Crew (F),,franchise
+604,The Dark Pictures Anthology (F),,franchise
+605,The Elder Scrolls (F),,franchise
+606,The Guild (F),,franchise
+607,The Last of Us (F),,franchise
+608,The Legend of Zelda (F),,franchise
+609,The Sims (F),,franchise
+610,The Witcher (F),,franchise
+611,theHunter (F),,franchise
+612,Total War (F),,franchise
+613,Trainstation (F),,franchise
+614,Trauma Center (F),,franchise
+615,Turok (F),,franchise
+616,Ty the Tasmanian Tiger (F),,franchise
+617,Unravel (F),,franchise
+618,Vigilante 8 (F),,franchise
+619,Viva Piñata (F),,franchise
+620,Warcraft (F),,franchise
+621,Wasteland (F),,franchise
+622,Watch Dogs (F),,franchise
+623,Wii (F),,franchise
+624,Wordbrain (F),,franchise
+625,World of Aden (F),,franchise
+626,Worms (F),,franchise
+627,Yakuza (F),,franchise
+628,Zoo Tycoon (F),,franchise
+271,Jak II,2003,game

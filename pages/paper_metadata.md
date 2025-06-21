@@ -31,7 +31,7 @@ select
 from literature_db.papers
 ```
 
-<Slider title="Publication Year" name=yearSlider min=2002 max=2025 fmt=id />
+<Slider title="Publication Year" name=yearSlider min=2001 max=2025 fmt=id />
 
 ```sql filtered_papers
 select 
@@ -54,6 +54,7 @@ Country of the primary author of each piece of literature. Click on a country to
 
 ```sql countries_query
 select
+    '/papers/' || papers.id as link,
     countries.name as country,
     first_author,
     publication_year,
@@ -91,14 +92,14 @@ where country = '${inputs.publication_map.country}'
 ```
 
 {#if inputs.publication_map.country == true}
-    <DataTable data={countries_query} rows=25>
+    <DataTable data={countries_query} rows=25 link=link>
         <Column id=country />
         <Column id=first_author />
         <Column id=publication_year fmt=id />
         <Column id=title />
     </DataTable>
 {:else}
-    <DataTable data={filtered_countries_query} rows=25>
+    <DataTable data={filtered_countries_query} rows=25 link=link>
         <Column id=country />
         <Column id=first_author />
         <Column id=publication_year fmt=id />
@@ -108,6 +109,7 @@ where country = '${inputs.publication_map.country}'
 
 ```sql language_query
 select 
+    '/papers/' || papers.id as link,
     language,
     first_author, 
     publication_year, 
@@ -172,7 +174,7 @@ where language like '${inputs.language_dropdown.value}'
 order by first_author asc
 ```
 
-<DataTable data={filtered_language_query} rows=25>
+<DataTable data={filtered_language_query} rows=25 link=link>
     <Column id=language />
     <Column id=first_author />
     <Column id=publication_year fmt=id />
