@@ -46,7 +46,12 @@ order by game_count desc, game_name asc
 ```
 
 ```sql game_paper_details
-select author, year, title, game['unnest'] as game_name
+select 
+    author, 
+    year, 
+    title, 
+    game['unnest'] as game_name,
+    '/papers/' || paper_id as link
 from ${papers_to_games},
 unnest(games) as game
 group by all
@@ -93,7 +98,12 @@ order by game_count desc, franchise asc
 ```
 
 ```sql franchise_paper_details
-select author, year, title, game['unnest'][:-4] as franchise
+select 
+    author, 
+    year, 
+    title, 
+    game['unnest'][:-4] as franchise,
+    '/papers/' || paper_id as link
 from ${papers_to_franchises},
 unnest(games) as game
 group by all
@@ -111,7 +121,7 @@ order by franchise asc
             swapXY=true
         />
 
-        <DataTable data={game_paper_details} search=true rows=25>
+        <DataTable data={game_paper_details} search=true rows=25 link=link>
             <Column id=game_name />
             <Column id=author />
             <Column id=year />
@@ -128,7 +138,7 @@ order by franchise asc
             swapXY=true
         />
 
-        <DataTable data={franchise_paper_details} search=true rows=25>
+        <DataTable data={franchise_paper_details} search=true rows=25 link=link>
             <Column id=franchise />
             <Column id=author />
             <Column id=year />

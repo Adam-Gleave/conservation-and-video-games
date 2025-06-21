@@ -222,7 +222,7 @@ select
     data_type,
     research_type,
     array_to_string(array_distinct(array_agg(study_outcomes.outcome)), ', ') as outcomes,
-   '/papers/' || papers.id as link
+    '/papers/' || papers.id as link
 from papers
 join studies
 on studies.paper_id = papers.id
@@ -240,4 +240,50 @@ order by first_author, publication_year, title asc
     <Column id=data_type />
     <Column id=research_type />
     <Column id=outcomes />
+</DataTable>
+
+<br/>
+
+## Player Map
+
+```sql countries_count
+select countries.name as country, count(countries.name) as count
+from studies_to_countries
+join countries
+on countries.id = studies_to_countries.country_id
+group by countries.name
+```
+
+<AreaMap
+    data={countries_count}
+    areaCol=country
+    geoJsonUrl='https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson'
+    geoId=name
+    value=count
+    startingZoom=4
+    height=420
+    name=player_map
+/>
+
+```sql papers_by_country
+select
+    first_author,
+    publication_year, 
+    title,
+    '/papers/' || papers.id as link
+from papers
+join studies
+on studies.paper_id = papers.id
+join studies_to_countries
+on studies.id = studies_to_countries.study_id
+join countries
+on studies_to_countries.country_id = countries.id
+where countries.name = '${inputs.player_map.country}'
+order by first_author, publication_year, title asc
+```
+
+<DataTable data={papers_by_country} rows=25 link=link emptySet=pass emptyMessage="No records: make a country selection">
+    <Column id=first_author />
+    <Column id=publication_year fmt=id />
+    <Column id=title />
 </DataTable>
