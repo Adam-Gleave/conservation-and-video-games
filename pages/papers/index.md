@@ -4,12 +4,18 @@ queries:
    - papers: papers.sql
 ---
 
-Click on an item to see more detail
-
+All papers included in the dataset. Click on a row to view more information.
 
 ```sql papers_with_link
-select *, '/papers/' || id as link
-from ${papers}
+select 
+   first_author, 
+   publication_year,
+   title,
+   publications.name as publication,
+   '/papers/' || papers.id as link
+from literature_db.papers
+join literature_db.publications
+on publication = publications.id
 ```
 
-<DataTable data={papers_with_link} link=link/>
+<DataTable data={papers_with_link} link=link rows=50 sort="first_author asc" search=true />

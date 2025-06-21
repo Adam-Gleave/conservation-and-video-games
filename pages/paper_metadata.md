@@ -92,7 +92,7 @@ where country = '${inputs.publication_map.country}'
 ```
 
 {#if inputs.publication_map.country == true}
-    <DataTable data={countries_query} rows=25 link=link>
+    <DataTable data={countries_query} link=link rows=25 sort="country asc">
         <Column id=country />
         <Column id=first_author />
         <Column id=publication_year fmt=id />
