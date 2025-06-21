@@ -50,9 +50,96 @@ Source: <Value data={papers_filtered} column=source />
 <p/>
 <br/>
 
+
+
+### Games
+
+<!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
+```sql papers_to_games
+select array_distinct(array_concat(p_names, s_names)) as games from
+(
+    select papers.id as p_id, array_agg(distinct games.name) as p_names
+    from literature_db.papers
+    join literature_db.games_to_papers
+    on papers.id = games_to_papers.paper_key
+    join literature_db.games
+    on games.id = games_to_papers.game_id
+    where games.type = 'game'
+    group by papers.id
+)
+full join
+(
+    select studies.paper_id as s_id, array_agg(distinct games.name) as s_names
+    from literature_db.studies
+    join literature_db.games_to_studies
+    on studies.id = games_to_studies.study_id
+    join literature_db.games
+    on games.id = games_to_studies.game_id
+    where games.type = 'game'
+    group by studies.paper_id
+)
+on p_id = s_id
+join literature_db.papers
+on papers.id = coalesce(p_id, s_id)
+where papers.id = '${params.id}'
+group by all
+```
+
+```sql games_unnested
+select game['unnest'] as game_name
+from ${papers_to_games},
+unnest(games) as game
+order by game_name asc
+```
+
+<DataTable data={games_unnested} emptySet=pass />
+
+### Franchises
+
+<!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
+```sql papers_to_franchises
+select array_distinct(array_concat(p_names, s_names)) as franchises from
+(
+    select papers.id as p_id, array_agg(distinct games.name) as p_names
+    from literature_db.papers
+    join literature_db.games_to_papers
+    on papers.id = games_to_papers.paper_key
+    join literature_db.games
+    on games.id = games_to_papers.game_id
+    where games.type = 'franchise'
+    group by papers.id
+)
+full join
+(
+    select studies.paper_id as s_id, array_agg(distinct games.name) as s_names
+    from literature_db.studies
+    join literature_db.games_to_studies
+    on studies.id = games_to_studies.study_id
+    join literature_db.games
+    on games.id = games_to_studies.game_id
+    where games.type = 'franchise'
+    group by studies.paper_id
+)
+on p_id = s_id
+join literature_db.papers
+on papers.id = coalesce(p_id, s_id)
+where papers.id = '${params.id}'
+group by all
+```
+
+```sql franchises_unnested
+select franchise['unnest'] as franchise_name
+from ${papers_to_franchises},
+unnest(franchises) as franchise
+order by franchise_name asc
+```
+
+<DataTable data={franchises_unnested} emptySet=pass />
+
+<br/>
+
 ---
 
-<p/>
 <br/>
 
 ## Studies
@@ -73,7 +160,8 @@ select
    case when power_analysis is true then 'yes' else 'no' end as power_analysis,
    array_to_string(array_distinct(array_agg(countries.name order by countries.name asc)), ', ') as countries,
    array_to_string(array_distinct(array_agg(games.name order by games.name asc) filter (where games.type = 'game')), ', ') as games,
-   array_to_string(array_distinct(array_agg(games.name order by games.name asc) filter (where games.type = 'franchise')), ', ') as franchises
+   array_to_string(array_distinct(array_agg(games.name order by games.name asc) filter (where games.type = 'franchise')), ', ') as franchises,
+   array_to_string(array_distinct(array_agg(study_outcomes.outcome)), ', ') as outcomes
 from studies
 left join studies_to_countries
 on studies.id = studies_to_countries.study_id
@@ -83,6 +171,8 @@ left join games_to_studies
 on studies.id = games_to_studies.study_id
 left join games
 on games.id = games_to_studies.game_id
+join study_outcomes
+on study_outcomes.study_id = studies.id
 where studies.paper_id = '${params.id}'
 group by all
 ```
@@ -141,8 +231,12 @@ order by games.name asc
          <p>
             Franchises studied: {study.franchises}
          </p>
+         <br>
+         <p>
+            Study outcomes: {study.outcomes}
+         </p>
       </Details>
    {/each}
 {:else}
-No studies associated with this paper.
+   No studies associated with this paper.
 {/if}
