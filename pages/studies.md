@@ -74,7 +74,8 @@ __<Value data={pre_post_measures_percent_query} column=percent fmt=pct2 />__ of 
 
 ```sql research_types
 select
-    studies.research_type as research_type, count(research_type) as research_type_count
+    replace(upper(substring(studies.research_type, 1, 1)) || lower(substring(studies.research_type, 2, strlen(studies.research_type))), '_', '-') as research_type,
+    count(lower(research_type)) as research_type_count
 from literature_db.studies
 group by research_type
 order by research_type asc
@@ -106,7 +107,8 @@ from ${research_types}
 
 ```sql data_types
 select
-    studies.data_type as data_type, count(data_type) as data_type_count
+    upper(substring(studies.data_type, 1, 1)) || lower(substring(studies.data_type, 2, strlen(studies.data_type))) as data_type,
+    count(data_type) as data_type_count
 from literature_db.studies
 group by data_type
 order by data_type asc
@@ -146,7 +148,10 @@ from ${data_types}
 <br/>
 
 ```sql study_types
-select study_outcomes.outcome as outcome, research_type, count(research_type) as count
+select 
+    replace(upper(substring(study_outcomes.outcome, 1, 1)) || lower(substring(study_outcomes.outcome, 2, strlen(study_outcomes.outcome))), '_', ' ') as outcome,
+    replace(upper(substring(studies.research_type, 1, 1)) || lower(substring(studies.research_type, 2, strlen(studies.research_type))), '_', '-') as research_type,
+    count(research_type) as count
 from
 literature_db.studies
 join
@@ -228,7 +233,7 @@ join studies
 on studies.paper_id = papers.id
 join study_outcomes
 on studies.id = study_outcomes.study_id
-where studies.research_type in ${inputs.research_type_dropdown.value} and studies.data_type in ${inputs.data_type_dropdown.value} and study_outcomes.outcome in ${inputs.outcome_dropdown.value}
+where studies.research_type in lower(${inputs.research_type_dropdown.value}) and studies.data_type in lower(${inputs.data_type_dropdown.value}) and study_outcomes.outcome in ${inputs.outcome_dropdown.value}
 group by all
 order by first_author, publication_year, title asc
 ```
@@ -258,7 +263,7 @@ group by countries.name
     data={countries_count}
     areaCol=country
     geoJsonUrl='https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson'
-    geoId=name
+    geoId=name_long
     value=count
     startingZoom=4
     height=420

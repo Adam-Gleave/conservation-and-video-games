@@ -30,7 +30,6 @@ id,name,continent
 34,Iceland,Europe
 35,Switzerland,Europe
 36,Turkey,Europe
-37,Czech Republic,Europe
 38,Romania,Europe
 39,Denmark,Europe
 40,France,Europe
@@ -62,3 +61,4 @@ id,name,continent
 65,Hungary,Europe
 3,United States,North America
 5,United Kingdom,Europe
+37,Czech Republic,Europe

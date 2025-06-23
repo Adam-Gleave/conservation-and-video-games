@@ -8,7 +8,14 @@ The number of times a game or franchise was referenced by different literature.
 
 <!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
 ```sql papers_to_games
-select coalesce(p_id, s_id) as paper_id, papers.type as paper_type, papers.first_author as author, papers.publication_year as year, papers.title as title, array_distinct(array_concat(p_names, s_names)) as games from
+select 
+    coalesce(p_id, s_id) as paper_id,
+    replace(upper(substring(papers.type, 1, 1)) || lower(substring(papers.type, 2, strlen(papers.type))), '_', '-') as paper_type,
+    papers.first_author as author,
+    papers.publication_year as year,
+    papers.title as title,
+    array_distinct(array_concat(p_names, s_names)) as games
+from
 (
     select papers.id as p_id, array_agg(distinct games.name) as p_names
     from literature_db.papers
@@ -60,7 +67,14 @@ order by game_name asc
 
 <!-- All franchises associated with a given paper (whether by paper or studies), deduplicated -->
 ```sql papers_to_franchises
-select coalesce(p_id, s_id) as paper_id, papers.type as paper_type, papers.first_author as author, papers.publication_year as year, papers.title as title, array_distinct(array_concat(p_names, s_names)) as games from
+select 
+    coalesce(p_id, s_id) as paper_id,
+    replace(upper(substring(papers.type, 1, 1)) || lower(substring(papers.type, 2, strlen(papers.type))), '_', '-') as paper_type,
+    papers.first_author as author,
+    papers.publication_year as year,
+    papers.title as title,
+    array_distinct(array_concat(p_names, s_names)) as games
+from
 (
     select papers.id as p_id, array_agg(distinct games.name) as p_names
     from literature_db.papers
@@ -161,7 +175,8 @@ All games included in the map, broken down by platform.
 
 ```sql platforms_query
 select
-    platform, count(platform) as platform_count
+    case when platform = 'pc' then 'PC' else upper(substring(platform, 1, 1)) || lower(substring(platform, 2, strlen(platform))) end as platform,
+    count(platform) as platform_count
 from literature_db.game_platforms
 group by platform
 order by platform asc
@@ -173,17 +188,6 @@ order by platform asc
     y=platform_count
     sort=false
 />
-
-```sql games_by_platform_query
-select games.name as game, array_agg(platform) as platforms
-from literature_db.games
-join literature_db.game_platforms
-on games.id = game_platforms.game_id
-where type = 'game'
-group by games.name
-having contains(platforms, '${inputs.platform_dropdown.value}')
-order by game asc
-```
 
 ## Games by Genre
 
@@ -204,7 +208,7 @@ order by genres.name asc
 ```sql games_genre_platform_query
 select 
     games.name as game, 
-    array_to_string(array_distinct(array_agg(platform)), ', ') as platforms, 
+    array_to_string(array_distinct(array_agg(case when platform = 'pc' then 'PC' else upper(substring(platform, 1, 1)) || lower(substring(platform, 2, strlen(platform))) end)), ', ') as platforms,
     array_to_string(array_distinct(array_agg(genres.name)), ', ') as genre_list
 from literature_db.games
 join literature_db.game_platforms
@@ -213,7 +217,7 @@ join literature_db.games_to_genres
 on games.id = games_to_genres.game_id
 join literature_db.genres
 on games_to_genres.genre_id = genres.id
-where type = 'game' and platform in ${inputs.platform_dropdown.value} and genres.name in ${inputs.genre_dropdown.value}
+where type = 'game' and platform in lower(${inputs.platform_dropdown.value}) and genres.name in ${inputs.genre_dropdown.value}
 group by all
 order by game asc
 ```

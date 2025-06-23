@@ -17,9 +17,7 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 20,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,283
 21,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,286
 22,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),2,"(,)",f,f,f,287
-23,non_experimental,"Played game and recorded observations (used journal entries, memos, screenshots), contextualized by separate paratexts/communication",qualitative,31-48 hours per game,,f,f,Game(s),2,"(,)",f,f,f,291
 24,non_experimental,"Immersive-participatory method - Collected data from own gameplay as well as digital archives of games dated between 2016-2022 (inc. game websites, game wikis, game forum, and game media)",qualitative,400 hours (total),,f,f,Game(s),2,"(,)",f,f,f,293
-25,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,294
 26,non_experimental,"Autoethnographic: Combining in-game wandering, slow play, and ludic bordeom to connect with in-game nature",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,297
 27,non_experimental,Content analysis of virtual landscapes which are compared to real-world ones; based on in-depth gameplay and evaluated by topic-relevant experts,mixed,,,f,f,Game(s),16,"(,)",f,f,f,298
 28,non_experimental,Content analysis of virtual landscapes which are compared to real-world ones; based on in-depth gameplay and evaluated by topic-relevant experts,mixed,,,f,f,Game(s),21,"(,)",f,f,f,299
@@ -42,10 +40,10 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 45,non_experimental,"Social semiotic approach to identify how MGSV promotes ecological awareness, based on gameplay recordings",mixed,,,f,f,Game(s),1,"(,)",f,f,f,325
 46,non_experimental,"Diary entries to record personal experiences (varied in format between authors, e.g., photography, raw observations, structured summary)",qualitative,8 weeks,,f,f,Game(s),1,"(,)",f,f,f,327
 47,non_experimental,"Content analysis to record environmental themes present in the game based on author gameplay, plus its accessibility features",mixed,,,f,f,Game(s),1,"(,)",f,f,f,332
+25,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,quantitative,,,f,f,Game(s),1,"(,)",f,f,f,294
 48,non_experimental,"Ecolinguistic analysis on the ecological framings in FF7_RI, based on its script",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,333
 49,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,338
 50,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,341
-51,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,mixed,,,f,f,Game(s),,"(,)",f,f,f,342
 52,non_experimental,"Value Sensitive Design to explore how game supports/limits sustainable thinking, based on observations of paratexts and games'' websites",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,344
 53,non_experimental,Content analysis of how the game elements engage players with environmental education,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,345
 54,non_experimental,"Critical analytical schema applied to game, based on author''s gameplay experience, game wikis, and reports from other players/researchers",qualitative,,,f,f,Game(s),1,"(,)",f,f,f,347
@@ -70,8 +68,6 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 73,non_experimental,"Played game and recorded/transcribed gameplay, using video and screenshots; reviewed YouTube videos and interviews with developer, plus forum discussions",qualitative,300+ hours,,f,f,Game(s),1,"(,)",f,f,f,376
 74,non_experimental,Semiotic square to map different approaches to engage with forests,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,380
 75,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),2,"(,)",f,f,f,381
-76,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,383
-77,non_experimental,Content analysis to build a phylogenetic tree based on assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,384
 78,non_experimental,Ecolinguistic analysis based on author gameplay and the game's paratexts (official website and wiki fandom page),qualitative,,,f,f,Game(s),1,"(,)",f,f,f,390
 79,non_experimental,Autoethnographic gameplay analysis,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,391
 80,non_experimental,Autoethnographic (collaborative approach within family),qualitative,6 months,,f,f,Game(s),1,"(,)",f,f,f,392
@@ -86,6 +82,7 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 89,non_experimental,Interviews (semi-structured) as part of multi-stage interventional study,qualitative,35-40 minutes,,f,f,Players,34,"[18,43)",f,f,t,279
 90,quasi_experimental,Survey (including implicit attitude test) as part of multi-stage interventional study,quantitative,35-40 minutes,,f,f,Players,36,"[18,43)",f,t,t,280
 136,quasi_experimental,Survey delivered via 11 games,quantitative,,,f,f,Players,"389,594","(,)",f,t,f,343
+76,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,383
 91,quasi_experimental,Survey (including implicit attitude test) as part of multi-stage interventional study,quantitative,35-40 minutes,Game (Plasticity),f,f,Players,36,"[18,43)",f,t,t,281
 92,non_experimental,Pedagogical experience to relate in-game species with real-world counterparts; Distributed questionnaires,qualitative,,,f,f,Players,28,"[15,17)",f,f,f,284
 93,non_experimental,Pedagogical experience using PG to learn biology; Recorded observations and conducted semi-structured interviews,qualitative,2 hours,,f,f,Players,4,"[14,15)",f,f,f,285
@@ -95,7 +92,6 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 97,non_experimental,Interviews (semi-structured) and closed card sorting task to identify/discuss main social issues in games,qualitative,15-200 hours per game,,f,t,Players/Journalists/Researchers,11,"[27,48)",f,f,f,318
 98,non_experimental,"Questionnaire for preferences and behaviours regarding PG features, based on content analysis used to identify presence of gamification features",quantitative,,,f,f,Players,311,"(,)",f,f,f,323
 100,non_experimental,"Survey for wildlife identification quiz, plus survey on learning and memorable in-game experiences",mixed,<5-100+ hours,,t,t,Players,545,"[18,)",f,f,f,278
-101,non_experimental,Survey of players sourced from social media and online blog,mixed,<50-500+ hours,,t,t,Players,"1,898","[18,)",f,f,f,274
 102,experimental,Randomised-control trial using questionnaires,quantitative,>=3 hours,Documentary,t,f,Players,182,"[18,55)",t,t,f,288
 103,quasi_experimental,Implicit association test to detect changes in implicit attitudes towards animal protagonists,quantitative,~24 minutes,,f,f,Players,78,"[18,49)",f,t,f,289
 104,non_experimental,Interview with game's Creative Director,qualitative,,,f,f,Game Creative Director,1,"(,)",f,f,f,310
@@ -120,8 +116,6 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 124,non_experimental,"Observed player engagement with author-made in-game ''Routes'' over 8 time points (spanning 154 days), followed by survey to assess ''Route'' habits/preferences",mixed,,,f,f,Players,67,"[18,)",f,f,f,331
 125,non_experimental,"Survey asking players'' favourite Pokemon species, and compared this to societal preferences of species",quantitative,,,f,f,Players,,"(,)",f,f,f,334
 126,non_experimental,Green space capability analysis using PG data to assess types of green space and generate a heat map of POIs for cultural and biodiversity hotspots,quantitative,,,f,f,University campus,1,"(,)",f,f,f,335
-127,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Players,"1,094","(,)",f,f,f,336
-128,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Players,"1,356","(,)",f,f,f,337
 129,non_experimental,Questionnaire and observations of player and gameplay to gauge player profiles and responses to a prototype pedagogical experience,mixed,,,f,f,Players,80,"[15,25)",f,f,f,373
 130,non_experimental,"Observed how children''s engagement with outdoor spaces was informed by experiences with online content (e.g., Minecraft, social media)",qualitative,,,f,f,Players,50,"[12,17)",f,f,f,357
 131,non_experimental,Questionnaire based on pedagogical experience about ecological interactions between real or virtual species; information sourced from content analysis by ecologists,quantitative,,non-game species,f,f,Players,67,"[18,)",f,f,f,356
@@ -139,5 +133,11 @@ id,research_type,description,data_type,exposure_duration,comparator,control_grou
 145,non_experimental,Content analysis of online discourse (Twitch),qualitative,,,f,f,Livestreams,2,"(,)",f,f,f,295
 146,non_experimental,Interviews (semi-structured) to review current state of teaching and researching environmental sustainability of digital media/games,qualitative,,,f,f,Academics who teach green gaming topics,10,"(,)",f,f,f,296
 147,non_experimental,Interviews (semi-structured) to identify overlap between game development and environmental issues,qualitative,,,f,f,Game developers,11,"(,)",f,f,f,296
-148,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,qualitative,,,f,f,Game studios (members of Czech Game Developers Association),33,"(,)",f,f,f,296
-149,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,qualitative,,,f,f,Game companies (members of Playing for the Planet Alliance),56,"(,)",f,f,f,296
+23,non_experimental,"Played game and recorded observations (used journal entries, memos, screenshots), contextualized by separate paratexts/communication",qualitative,31-48 hours per game,,f,f,Game(s),3,"(,)",f,f,f,291
+51,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),,"(,)",f,f,f,342
+148,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,quantitative,,,f,f,Game studios (members of Czech Game Developers Association),33,"(,)",f,f,f,296
+149,non_experimental,Content analysis for official communication of game studios regarding their commitment to environmentalism,quantitative,,,f,f,Game companies (members of Playing for the Planet Alliance),56,"(,)",f,f,f,296
+128,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Steam reviews and profiles,"1,356","(,)",f,f,f,337
+127,non_experimental,"Data scrape of user profile data based on game reviews, collected via Steam API",mixed,,,f,f,Steam reviews and profiles,"1,094","(,)",f,f,f,336
+101,non_experimental,Survey of players sourced from social media and online blog,mixed,<50-500+ hours,,f,f,Players,"1,898","[18,)",f,f,f,274
+77,non_experimental,Content analysis based on taxonomic assessments of in-game species relative to their real-world inspirations/counterparts,qualitative,,,f,f,Game(s),1,"(,)",f,f,f,384

@@ -10,7 +10,7 @@ Summary of paper types (empirical vs. non-empirical) by publication date.
 select 
     publication_year,
     count(publication_year) as paper_count,
-    type
+    replace(upper(substring(papers.type, 1, 1)) || lower(substring(papers.type, 2, strlen(papers.type))), '_', '-') as paper_type,
 from literature_db.papers
 group by all
 ```
@@ -19,7 +19,7 @@ group by all
     data={paper_types_query}
     x=publication_year
     y=paper_count
-    series=type
+    series=paper_type
     xFmt=id
 />
 
@@ -79,7 +79,7 @@ group by country
     data={countries_count}
     areaCol=country
     geoJsonUrl='https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson'
-    geoId=name
+    geoId=name_long
     value=country_count
     startingZoom=4
     height=420

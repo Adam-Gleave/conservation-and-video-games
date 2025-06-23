@@ -148,8 +148,8 @@ order by franchise_name asc
 select 
    studies.id,
    description,
-   research_type,
-   data_type,
+   replace(upper(substring(studies.research_type, 1, 1)) || lower(substring(studies.research_type, 2, strlen(studies.research_type))), '_', '-') as research_type,
+   replace(upper(substring(studies.data_type, 1, 1)) || lower(substring(studies.data_type, 2, strlen(studies.data_type))), '_', '-') as data_type,
    case when comparator is not null then comparator else 'none' end as comparator,
    case when control_group is true then 'yes' else 'no' end as control_group,
    case when pilot_study is true then 'yes' else 'no' end as pilot_study,
@@ -161,7 +161,9 @@ select
    array_to_string(array_distinct(array_agg(countries.name order by countries.name asc)), ', ') as countries,
    array_to_string(array_distinct(array_agg(games.name order by games.name asc) filter (where games.type = 'game')), ', ') as games,
    array_to_string(array_distinct(array_agg(games.name order by games.name asc) filter (where games.type = 'franchise')), ', ') as franchises,
-   array_to_string(array_distinct(array_agg(study_outcomes.outcome)), ', ') as outcomes
+   array_to_string(array_distinct(array_agg(
+      replace(upper(substring(study_outcomes.outcome, 1, 1)) || lower(substring(study_outcomes.outcome, 2, strlen(study_outcomes.outcome))), '_', ' ')
+   )), ', ') as outcomes
 from studies
 left join studies_to_countries
 on studies.id = studies_to_countries.study_id
