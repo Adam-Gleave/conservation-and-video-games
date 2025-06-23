@@ -43,13 +43,25 @@ on papers.id = coalesce(p_id, s_id)
 group by all
 ```
 
-```sql game_counts
-select game['unnest'] as game_name, paper_type, count(game) as game_count
+```sql game_counts_over_paper_types
+select game['unnest'] as game_name, paper_type as paper_type, count(game) as game_count
 from ${papers_to_games},
 unnest(games) as game
-group by all
-having count(game) >= 3
-order by game_count desc, game_name asc
+group by game_name, paper_type
+order by game_name asc
+```
+
+```sql game_totals
+select game_name, sum(game_count) as total,
+from ${game_counts_over_paper_types}
+group by game_name
+```
+
+```sql full_game_counts
+select game_name, paper_type, game_count, total
+from ${game_totals}
+natural join ${game_counts_over_paper_types}
+where total >= 3
 ```
 
 ```sql game_paper_details
@@ -102,13 +114,25 @@ on papers.id = coalesce(p_id, s_id)
 group by all
 ```
 
-```sql franchise_counts
-select game['unnest'][:-4] as franchise, paper_type, count(game) as game_count
+```sql franchise_counts_over_paper_types
+select game['unnest'][:-4] as franchise, paper_type, count(game) as franchise_count
 from ${papers_to_franchises},
 unnest(games) as game
-group by all
-having count(game) >= 3
-order by game_count desc, franchise asc
+group by franchise, paper_type
+order by franchise asc
+```
+
+```sql franchise_totals
+select franchise, sum(franchise_count) as total,
+from ${franchise_counts_over_paper_types}
+group by franchise
+```
+
+```sql full_franchise_counts
+select franchise, paper_type, franchise_count, total
+from ${franchise_totals}
+natural join ${franchise_counts_over_paper_types}
+where total >= 3
 ```
 
 ```sql franchise_paper_details
@@ -127,7 +151,7 @@ order by franchise asc
 <Tabs fullWidth=true>
     <Tab label="Games">
         <BarChart
-            data={game_counts}
+            data={full_game_counts}
             x=game_name
             y=game_count
             series=paper_type
@@ -144,9 +168,9 @@ order by franchise asc
     </Tab>
     <Tab label="Franchises">
         <BarChart
-            data={franchise_counts}
+            data={full_franchise_counts}
             x=franchise
-            y=game_count
+            y=franchise_count
             series=paper_type
             xFmt=id
             swapXY=true
