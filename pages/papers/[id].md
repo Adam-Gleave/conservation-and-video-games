@@ -8,7 +8,7 @@ select
    papers.*,
    countries.name as country_name,
    publications.name as publication_name,
-   publications.publication_type,
+   replace(upper(substring(publications.publication_type, 1, 1)) || lower(substring(publications.publication_type, 2, strlen(publications.publication_type))), '_', ' ') as publication_type,
 from literature_db.papers
 left join literature_db.countries
 on first_author_country = countries.id
