@@ -1,6 +1,13 @@
 # Studies
 
-## List of Empirical Papers
+This page provides some details for data-driven research. Of the 132 empirical papers, there were 142 studies in total.
+
+Use the tables to search for papers according to their research or data type, variables or outcomes studied, or the cuurent country of residence for their participants.
+
+---
+
+## Empirical papers
+All empirical papers included in our map.
 
 ```sql empirical_papers
 select 
@@ -58,17 +65,64 @@ from ${study_count_query}
 <p/>
 <br/>
 
-__<Value data={comparator_percent_query} column=percent fmt=pct2 />__ of all studies used comparators. 
+<!-- __<Value data={comparator_percent_query} column=percent fmt=pct2 />__ of all studies used comparators. 
 
 __<Value data={control_group_percent_query} column=percent fmt=pct2 />__ of all studies used control groups. 
 
-__<Value data={pre_post_measures_percent_query} column=percent fmt=pct2 />__ of all studies used pre/post measures.
+__<Value data={pre_post_measures_percent_query} column=percent fmt=pct2 />__ of all studies used pre/post measures. -->
+
+__7 (24.1%)__ quantitative or mixed-data studies reported any justification for their sample size.
+<p>
+
+__4 (8.7%)__ player-focused studied included a control group (all of which were non-players).
+<p>
+
+__9 (19.6%)__ included pre/post-test measures.
+<p>
+
+__3 (6.5%)__ conducted any follow-up tests. 
 
 <br/>
 
 ---
 
 <br/>
+
+```sql data_types
+select
+    upper(substring(studies.data_type, 1, 1)) || lower(substring(studies.data_type, 2, strlen(studies.data_type))) as data_type,
+    count(data_type) as data_type_count
+from literature_db.studies
+group by data_type
+order by data_type asc
+```
+
+
+```sql data_types_donut_query
+select
+    data_type as name,
+    data_type_count as value
+from ${data_types}
+```
+
+## Data types
+Number of studies that collected _exclusively_ qualitative or quantitative data, or both (mixed).
+
+
+<ECharts config={
+    {
+        tooltip: {
+            formatter: '{b}: {c} ({d}%)'
+        },
+        series: [
+            {
+                type: 'pie',
+                radius: ['40%', '70%'],
+                data: [...data_types_donut_query],
+            }
+        ]
+    }
+}/>
 
 <!-- ## Studies by Research Type -->
 
@@ -88,7 +142,8 @@ select
 from ${research_types}
 ```
 
-## Studies by Research Type
+## Research types
+Number of studies per research type. ‘Experimental’ research requires pre/post-test measures as well as a treatment and control group; ‘quasi-experimental’ studies include pre/post-test measures but do not require a control group; ‘non-experimental’ covers all other study designs, such as ethnography, and content analyses.
 
 <ECharts config={
     {
@@ -105,44 +160,13 @@ from ${research_types}
     }
 }/>
 
-```sql data_types
-select
-    upper(substring(studies.data_type, 1, 1)) || lower(substring(studies.data_type, 2, strlen(studies.data_type))) as data_type,
-    count(data_type) as data_type_count
-from literature_db.studies
-group by data_type
-order by data_type asc
-```
-
-
-```sql data_types_donut_query
-select
-    data_type as name,
-    data_type_count as value
-from ${data_types}
-```
-
-## Studies by Data Type
-
-<ECharts config={
-    {
-        tooltip: {
-            formatter: '{b}: {c} ({d}%)'
-        },
-        series: [
-            {
-                type: 'pie',
-                radius: ['40%', '70%'],
-                data: [...data_types_donut_query],
-            }
-        ]
-    }
-}/>
-
 <p/>
 <br/>
 
-## Variables and Outcomes by Research Type
+---
+
+## Variables and outcomes studied
+Number of empirical papers that measures each type of variable or outcome, broken down by research types.
 
 <p/>
 <br/>
@@ -170,6 +194,8 @@ group by outcome, research_type
 />
 
 <br/>
+
+--- 
 
 ```sql data_types
 select distinct data_type
@@ -249,7 +275,21 @@ order by first_author, publication_year, title asc
 
 <br/>
 
-## Player Map
+---
+
+## Participants map
+<p>
+Regarding sample types, video games were most common (n=74, 52.1%). Players were next (n=48, 32.4%), followed by online content from social media, paratexts, and livestreams (n=10, 7.0%), and 10 (7.0%) studies that targeted individuals who work with or for game studios (e.g., developers, academics, campaign organisers). 
+</p>
+<br/>
+<p>
+Where specified for player-focused work, their current country of residence was reported for 31 (67.4%) studies and showed similar geographic bias as lead authorship, where European and/or North American players were represented in more studies (n=31, 62.0%) than other players.
+</p>
+<br/>
+<p>
+This map shows the countries of residence for any participants included in studies, if reported. Click on a country to filter the table below.
+</p>
+<br/>
 
 ```sql countries_count
 select countries.name as country, count(countries.name) as count

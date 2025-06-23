@@ -1,10 +1,16 @@
 # Paper Metadata
 
-Some introduction here
+This page provides details regarding paper metadata. Of the 380 papers, 132 (34.7%) were empirical and 248 (65.3%) were non-empirical. Please note that literature for 2025 is not fully represented as searches ended in January. More details for paper metadata can be found in our manuscript and its supplementary information.
 
-## Paper Types over Time
+The most frequent publication type was journal article (n=201, 52.9%), followed by book chapter (n=69, 18.2%), conference proceeding (n=41, 10.8%), and dissertation (n=38, 10.0%). Two books particularly contributed to the sharp rise in literature for 2024, together containing 20 relevant chapters: _Video Games and Environmental Humanities: Playing to Save The World_ (Aliano & Crowley, 2024) and _Ecogames: Playful Perspectives on the Climate Crisis_ (op de Beke, Raessens, Werning, & Farca, 2024). For journal articles, several texts were from the non-peer-reviewed outlet _Journal of Geek Studies_ (n=22, 10.9%). The most popular peer-reviewed journals represented were _Games and Culture_ (n=9, 4.5%), _Ecozon@_ (n=6, 3.0%), _People and Nature_ (n=5, 2.5%), and _American Entomologist_ (n=5, 2.5%).
 
-Summary of paper types (empirical vs. non-empirical) by publication date.
+Use the tables to search for papers according to their year and language of publication, and first authors' country of affiliation.
+
+---
+
+## Paper types over time
+
+Number of papers published each year.
 
 ```sql paper_types_query
 select 
@@ -48,9 +54,11 @@ where publication_year = '${inputs.yearSlider}'
     <Column id=title />
 </DataTable>
 
-## Literature by Country
+---
 
-Country of the primary author of each piece of literature. Click on a country to filter the table below.
+## Literature by country
+
+Country of the first author's affiliation for each paper. Where first authors specified an affiliated institution, their geographic distribution was strongly biased towards North American (35.4%) and European (44.7%) countries. Click on a country to filter the table below.
 
 ```sql countries_query
 select
@@ -132,8 +140,10 @@ select percent from
 where lower(language) = 'english'
 ```
 
-## Language Breakdown
-Written language of each piece of literature. English constitutes __<Value data={language_percentage_query} column=percent fmt=pct0 />__ of the data set.
+---
+
+## Language of papers
+Representation of languages for the 380 papers. English constitutes __<Value data={language_percentage_query} column=percent fmt=pct0 />__ of the data set.
 
 ```sql language_donut_query
 select

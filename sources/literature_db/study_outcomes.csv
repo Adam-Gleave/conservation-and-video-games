@@ -204,7 +204,6 @@ study_id,outcome
 124,ingame_interactions
 124,perception
 125,representing_nature
-125,ingame_interactions
 125,perception
 126,representing_nature
 126,perception
@@ -251,7 +250,6 @@ study_id,outcome
 143,emotion
 143,gameplay_experience
 143,perception
-143,using_games_for_environmentalism
 144,using_games_for_environmentalism
 145,reflecting_ecological_issues
 145,using_games_for_environmentalism
@@ -261,3 +259,5 @@ study_id,outcome
 149,using_games_for_environmentalism
 23,ingame_interactions
 23,perception
+136,social_connections
+143,reflecting_ecological_issues
