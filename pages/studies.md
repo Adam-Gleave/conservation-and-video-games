@@ -143,7 +143,7 @@ from ${research_types}
 ```
 
 ## Research types
-Number of studies per research type. ‘Experimental’ research requires pre/post-test measures as well as a treatment and control group; ‘quasi-experimental’ studies include pre/post-test measures but do not require a control group; ‘non-experimental’ covers all other study designs, such as ethnography and content analyses.
+Number of studies per research type. ‘Experimental’ research requires pre/post-test measures as well as a treatment and control group; ‘quasi-experimental’ studies include pre/post-test measures but do not require a control group; ‘non-experimental’ covers all other study designs.
 
 <ECharts config={
     {
