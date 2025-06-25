@@ -23,21 +23,18 @@ This research has been conducted as part of a DPhil project with the University 
 
 <p>
     Website: <Link 
-        url="www.katie-blake.com/"
+        url="https://katie-blake.com/"
         label="katie-blake.com"
     />
 </p>
 <p>
     LinkedIn: <Link 
-        url="linkedin.com/in/katie-blake96"
+        url="https://linkedin.com/in/katie-blake96"
         label="linkedin.com/in/katie-blake96"
     />
 </p>
 <p>
-    Email: <Link 
-        url="katie.blake@biology.ox.ac.uk"
-        label="katie.blake@biology.ox.ac.uk"
-    />
+    Email: katie.blake@biology.ox.ac.uk
 </p>
 <br/>
 <br/>
@@ -56,21 +53,18 @@ __Adam Gleave__ developed this online database. He is an experienced software en
 
 <p>
     GitHub: <Link 
-        url="github.com/Adam-Gleave"
+        url="https://github.com/Adam-Gleave"
         label="github.com/Adam-Gleave"
     />
 </p>
 <p>
     LinkedIn: <Link 
-        url="linkedin.com/in/adam-gleave"
+        url="https://linkedin.com/in/adam-gleave"
         label="linkedin.com/in/adam-gleave"
     />
 </p>
 <p>
-    Email: <Link 
-        url="adamgleave1997@gmail.com"
-        label="adamgleave1997@gmail.com"
-    />
+    Email: adamgleave1997@gmail.com
 </p>
 
 <br/>
