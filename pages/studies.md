@@ -2,7 +2,7 @@
 
 This page provides some details for data-driven research. Of the 132 empirical papers, there were 142 studies in total.
 
-Use the tables to search for papers according to their research or data type, variables or outcomes studied, or the cuurent country of residence for their participants.
+Use the tables to search for papers according to their research or data type, variables or outcomes studied, or the current country of residence for their participants.
 
 ---
 
@@ -20,7 +20,7 @@ where type = 'empirical'
 order by first_author, publication_year, title asc
 ```
 
-<DataTable data={empirical_papers} rows=25 link=link>
+<DataTable data={empirical_papers} rows=25 link=link search=true>
     <Column id=first_author />
     <Column id=publication_year fmt=id />
     <Column id=title />
@@ -74,7 +74,7 @@ __<Value data={pre_post_measures_percent_query} column=percent fmt=pct2 />__ of 
 __7 (24.1%)__ quantitative or mixed-data studies reported any justification for their sample size.
 <p>
 
-__4 (8.7%)__ player-focused studied included a control group (all of which were non-players).
+__4 (8.7%)__ player-focused studied included a control group - all were non-players.
 <p>
 
 __9 (19.6%)__ included pre/post-test measures.
@@ -143,7 +143,7 @@ from ${research_types}
 ```
 
 ## Research types
-Number of studies per research type. ‘Experimental’ research requires pre/post-test measures as well as a treatment and control group; ‘quasi-experimental’ studies include pre/post-test measures but do not require a control group; ‘non-experimental’ covers all other study designs, such as ethnography, and content analyses.
+Number of studies per research type. ‘Experimental’ research requires pre/post-test measures as well as a treatment and control group; ‘quasi-experimental’ studies include pre/post-test measures but do not require a control group; ‘non-experimental’ covers all other study designs, such as ethnography and content analyses.
 
 <ECharts config={
     {
@@ -166,7 +166,7 @@ Number of studies per research type. ‘Experimental’ research requires pre/po
 ---
 
 ## Variables and outcomes studied
-Number of empirical papers that measures each type of variable or outcome, broken down by research types.
+Number of empirical papers that measure each type of variable or outcome, broken down by research types.
 
 <p/>
 <br/>

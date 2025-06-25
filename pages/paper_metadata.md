@@ -2,7 +2,7 @@
 
 This page provides details regarding paper metadata. Of the 380 papers, 132 (34.7%) were empirical and 248 (65.3%) were non-empirical. Please note that literature for 2025 is not fully represented as searches ended in January. More details for paper metadata can be found in our manuscript and its supplementary information.
 
-The most frequent publication type was journal article (n=201, 52.9%), followed by book chapter (n=69, 18.2%), conference proceeding (n=41, 10.8%), and dissertation (n=38, 10.0%). Two books particularly contributed to the sharp rise in literature for 2024, together containing 20 relevant chapters: _Video Games and Environmental Humanities: Playing to Save The World_ (Aliano & Crowley, 2024) and _Ecogames: Playful Perspectives on the Climate Crisis_ (op de Beke, Raessens, Werning, & Farca, 2024). For journal articles, several texts were from the non-peer-reviewed outlet _Journal of Geek Studies_ (n=22, 10.9%). The most popular peer-reviewed journals represented were _Games and Culture_ (n=9, 4.5%), _Ecozon@_ (n=6, 3.0%), _People and Nature_ (n=5, 2.5%), and _American Entomologist_ (n=5, 2.5%).
+The most frequent publication type was journal article (n=201, 52.9%), followed by book chapter (n=69, 18.2%), conference proceeding (n=41, 10.8%), and dissertation (n=38, 10.0%). Two books particularly contributed to the sharp rise in literature for 2024, together containing 20 relevant chapters: _Video Games and Environmental Humanities: Playing to Save The World_ (Aliano & Crowley, 2024) and _Ecogames: Playful Perspectives on the Climate Crisis_ (op de Beke et al., 2024). For journal articles, several texts were from the non-peer-reviewed outlet _Journal of Geek Studies_ (n=22, 10.9%). The most popular peer-reviewed journals represented were _Games and Culture_ (n=9, 4.5%), _Ecozon@_ (n=6, 3.0%), _People and Nature_ (n=5, 2.5%), and _American Entomologist_ (n=5, 2.5%).
 
 Use the tables to search for papers according to their year and language of publication, and first authors' country of affiliation.
 
@@ -46,6 +46,7 @@ select
     first_author, 
     title from literature_db.papers 
 where publication_year = '${inputs.yearSlider}'
+order by publication_year, first_author, title
 ```
 
 <DataTable data={filtered_papers} rows=25 link=link>
@@ -73,7 +74,7 @@ join literature_db.countries
 on literature_db.papers.first_author_country = literature_db.countries.id
 join literature_db.publications
 on literature_db.papers.publication = literature_db.publications.id
-order by first_author asc
+order by first_author, publication_year, title asc
 ```
 
 ```sql countries_count
@@ -181,7 +182,7 @@ Filter all literature by language below:
 select *
 from ${language_query}
 where language like '${inputs.language_dropdown.value}'
-order by first_author asc
+order by first_author, publication_year, title asc
 ```
 
 <DataTable data={filtered_language_query} rows=25 link=link>

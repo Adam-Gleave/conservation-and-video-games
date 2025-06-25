@@ -1,8 +1,13 @@
 # Overview
 
-Welcome to the interactive database that complements Blake et al.'s (2025) manuscript: “How commercial video games engage with biodiversity and conservation: a systematic map of literature”. The manuscript has been submitted for peer-review, and the current preprint can be found [[HERE]].
+Welcome to the interactive database that complements Blake et al.'s (2025) manuscript: “_How commercial video games engage with biodiversity and conservation: a systematic map of literature_”. The manuscript is being peer-reviewed; a preprint can be found <Link 
+        url="https://osf.io/preprints/socarxiv/f2qs7_v1"
+        label="here"
+    />. 
 
-Every table and figure on each page can be downloaded.
+The manuscript provides useful context for this research, as well as suggestions for future work based on our findings. 
+
+Every table and figure on each page can be downloaded for use offline. Visit the _About Us_ page to get in touch with comments or questions - we would love any feedback!
 
 ---
 

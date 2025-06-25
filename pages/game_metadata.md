@@ -8,7 +8,7 @@ Use the tables to search for games, franchises, platforms, and genres to find wh
 
 ## Frequency of games and franchises
 
-The number of times a game or franchise was addressed by each type of paper.
+The number of times a game or franchise was addressed by each type of paper. Only those covered in at least three separate papers are shown here.
 
 <!-- All games associated with a given paper (whether by paper or studies), deduplicated -->
 ```sql papers_to_games
@@ -78,7 +78,7 @@ select
 from ${papers_to_games},
 unnest(games) as game
 group by all
-order by game_name asc
+order by game_name, author, year asc
 ```
 
 <!-- All franchises associated with a given paper (whether by paper or studies), deduplicated -->
@@ -149,7 +149,7 @@ select
 from ${papers_to_franchises},
 unnest(games) as game
 group by all
-order by franchise asc
+order by franchise, author, year asc
 ```
 
 <Tabs fullWidth=true>
